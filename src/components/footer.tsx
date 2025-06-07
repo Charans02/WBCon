@@ -15,9 +15,7 @@ const Footer = () => {
                 Good News<span className="text-blue-800"> Haulers</span>
               </Text>
               <Text className="mt-4">
-                We take on jobs ranging from, junk removal, house/yard clean
-                outs, construction removal, demolition, and even boat and RV,
-                auto removal. We are open 24/7 ready to get any job done!
+                We don't just haul junk. We restore peace of mind. We are open 24/7 ready to get any job done!
               </Text>
               <div className="mt-8 flex gap-8">
                 {SOCIAL_LINKS.map((link) => (

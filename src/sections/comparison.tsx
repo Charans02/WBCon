@@ -105,15 +105,15 @@ const Comparison = () => {
             <div className="flex flex-col items-center justify-center px-[20px] md:px-[35px] lg:flex-row lg:px-[60px]">
               <div className="flex flex-col">
                 <Text variant="h2" className="text-center text-white">
-                  See How We Make Your Junk{" "}
-                  <span className="font-extrabold underline">Disappear!</span>
+                  See the difference We Make in{" "}
+                  <span className="font-extrabold underline">Junk Removal</span>!
                 </Text>
                 <p className="mt-4 hidden text-center font-[family-name:var(--font-sora-sans)] text-[25px] leading-[30px] font-semibold text-white/70 sm:block">
                   <span className="font-extrabold">
-                    No job is to big for the Haulers
+                    Big or small, we haul it all -
                   </span>
                   {"  "}
-                  we eat your junk for breakfast.
+                  junk trembles when the Haulers roll in!
                 </p>
               </div>
 

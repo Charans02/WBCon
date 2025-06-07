@@ -4,7 +4,7 @@ import { Text } from "@/components/ui";
 
 const STATES = [
   { content: 100, more: true, description: "Satisfied Customers" },
-  { content: 10, more: true, description: "Years Experience" },
+  { content: 1, more: true, description: "Years Experience" },
   { content: 3, more: true, description: "Trash Trucks" },
   { content: 6, more: true, description: "Counties We Service" },
 ];

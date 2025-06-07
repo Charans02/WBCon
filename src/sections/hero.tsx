@@ -25,19 +25,18 @@ const Hero = () => {
               className="text-center text-[38px] leading-[50px] sm:text-[28px] sm:leading-[43px] md:text-[34px] md:leading-[43px] lg:text-left xl:text-left xl:text-[55px] xl:leading-[78px]"
             >
               <span className="text-blue-900 font-extrabold">
-                Texas&apos;s
+                Faith-Driven Junk Removal Done Right
               </span>
               <br />
-              #1 Top Rated Junk <br /> Removal Team
+              Fast, Affordable, <br /> Reliable
             </Text>
             <Text className="text-center text-[16px] leading-[23px] md:text-left md:text-[18px] lg:text-left lg:text-[21px] lg:leading-[26px] xl:text-left">
               <span className="leading-[33px] font-bold">
-                Proudly serving Texas for 10 years
+                We serve with purpose. Helping homeowners and businesses declutter with
               </span>
               {/* <br /> */}
               <span className="hidden">From clean outs to residential junk hauling.</span>
               <br />
-              We get it done right the first time.
             </Text>
             <div
               className="scrollbar-hide flex w-full max-w-full items-center justify-center md:justify-start gap-1.5 overflow-x-auto py-2 whitespace-nowrap sm:gap-2.5 lg:gap-5 lg:py-3"
@@ -46,21 +45,21 @@ const Hero = () => {
               <div className="flex flex-shrink-0 items-center gap-1.5 sm:gap-2.5">
                 <CalendarRange className="size-3 sm:size-3.5 lg:size-4 xl:size-6" />
                 <Text className="text-[12px] leading-[12px] font-semibold sm:text-[12px] sm:leading-[13px] md:text-[14px] md:leading-[15px] lg:text-[16px] lg:leading-[24px] xl:text-[17px]">
-                  10+ Years
+                  honesty
                 </Text>
               </div>
               <div className="bg-background h-4 w-px flex-shrink-0 sm:h-5 lg:h-9" />
               <div className="flex flex-shrink-0 items-center gap-1.5 sm:gap-2.5">
                 <Truck className="size-3 sm:size-3.5 lg:size-4 xl:size-6" />
                 <Text className="text-[12px] leading-[12px] font-semibold sm:text-[12px] sm:leading-[13px] md:text-[14px] md:leading-[15px] lg:text-[16px] lg:leading-[24px] xl:text-[17px]">
-                  3 Trucks
+                  integrity
                 </Text>
               </div>
               <div className="bg-background h-4 w-px flex-shrink-0 sm:h-5 lg:h-9" />
               <div className="flex flex-shrink-0 items-center gap-1.5 sm:gap-2.5">
                 <Globe className="size-3 sm:size-3.5 lg:size-4 xl:size-6" />
                 <Text className="text-[12px] leading-[12px] font-semibold sm:text-[12px] sm:leading-[13px] md:text-[14px] md:leading-[15px] lg:text-[16px] lg:leading-[24px] xl:text-[17px]">
-                  6+ Counties
+                  hustle.
                 </Text>
               </div>
             </div>

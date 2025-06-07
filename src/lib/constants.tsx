@@ -73,47 +73,33 @@ export const QUICK_LINKS = [
 export const SERVICES: ServiceType[] = [
   {
     image: "/images/service_1.jpg",
-    title: "Property clean outs",
+    title: "Residential Junk Removal",
     description:
-      "If you recently purchased a house or our trying to sell a house or had a tenant recently move out. We are the right guys for the job!",
+      "We clear garages, storage units, attics, and anywhere else junk piles up.",
     imageHeight: 600,
   },
   {
     image: "/images/service_2.jpg",
-    title: "Auto/Boat/RV removal",
+    title: "Yard Waste & Debris",
     description:
-      "We are one of the only junk removal companies in Texas who are  able to get your car, boat or rv stuck in your driveway gone today!",
+      "Landscaping mess or storm debris? We’ll get your yard back to clean.",
     imageHeight: 600,
   },
   {
     image: "/images/service_3.jpg",
-    title: "Trash and Junk Removal",
+    title: "Construction & Renovation Cleanup",
     description:
-      "We remove any trash or junk piling up in your home, garage or any where you need it gone!",
+      "Contractors and DIYers alike trust us to haul away scrap and debris fast.",
     imageHeight: 600,
   },
 ];
 
 export const TESTIMONIALS: TestimonialType[] = [
   {
-    avatar: "/images/avatar_1.png",
-    name: "Pedro Beatty",
+    avatar: "/images/avatar.png",
+    name: "Local Customer, Arlington TX",
     content:
-      "Needed appliances removed out of a property I had, (refrigerator, oven, washer and, dryer). Good News Haulers came out had them removed quickly. Will definitely use them again and refer to my friends that need junk removed.",
-    rating: 5,
-  },
-  {
-    avatar: "/images/avatar_2.png",
-    name: "Justin Gerhold Jr.",
-    content:
-      "My tenant moved out of my property, needed to get all the old furniture out of the apartment. Good News Haulers had it done in a day.",
-    rating: 5,
-  },
-  {
-    avatar: "/images/avatar_3.png",
-    name: "Rufus Mohr",
-    content:
-      "Had a very easy time working with him. I needed my garage cleaned out before the holidays. The owner came out on the weekend, got it all done in a timely manner and left my garage looking great.",
+      "Kalin and his team showed up same day, were super friendly, and left the space spotless. I love supporting local businesses like this.",
     rating: 5,
   },
 ];

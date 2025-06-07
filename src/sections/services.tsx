@@ -33,25 +33,25 @@ const ServiceCard = ({ s }: { s: ServiceType }) => {
   const imageHeight = s.imageHeight || 260; // fallback
   // Function to format the title with colored parts
   const formatTitle = (title: string) => {
-    if (title === "Property clean outs") {
+    if (title === "Residential Junk Removal") {
       return (
         <>
-          <span className="text-blue-600">Property</span>
-          <span> Clean Outs</span>
+          <span className="text-blue-600">Residential</span>
+          <span> Junk Removal</span>
         </>
       );
-    } else if (title === "Auto/Boat/RV removal") {
+    } else if (title === "Yard Waste & Debris") {
       return (
         <>
-          <span className="text-blue-600">Auto/Boat/RV</span>
-          <span> Removal</span>
+          <span className="text-blue-600">Yard Waste &</span>
+          <span> Debris</span>
         </>
       );
-    } else if (title === "Trash and Junk Removal") {
+    } else if (title === "Construction & Renovation Cleanup") {
       return (
         <>
-          <span className="text-blue-600">Trash and Junk</span>
-          <span> Removal</span>
+          <span className="text-blue-600">Construction & Renovation</span>
+          <span> Cleanup</span>
         </>
       );
     }

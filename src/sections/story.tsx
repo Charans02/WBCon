@@ -10,10 +10,10 @@ const Story = () => {
       className="flex flex-col items-center px-[80px] py-[60px]"
     >
       <Text variant="h2">
-        <span className="text-blue-800">Our</span> Story!
+        <span className="text-blue-800">What</span> We Do!
       </Text>
       <Text className="mt-8 hidden max-w-[702px] text-center text-[#525252]">
-        For 10 + years Good News Haulers has been dedicated to keeping Texas a
+        For 1+ years Good News Haulers has been dedicated to keeping Texas a
         cleaner place for both you and those around you
       </Text>
       <div className="mt-8 xl:mt-15 flex w-full max-w-[768px] flex-col items-center gap-8 md:gap-20 xl:max-w-full xl:flex-row xl:gap-30">
@@ -27,8 +27,8 @@ const Story = () => {
         </div>
         <div className="flex w-full flex-col items-center gap-8">
           <p className="text-center font-[family-name:var(--font-sora-sans)] text-[28px] leading-[44px] font-normal uppercase lg:text-left">
-            <span className="text-blue-700 font-extrabold">Good News Haulers, </span>
-            promise to Texas
+            <span className="text-blue-700 font-extrabold">Got clutter? </span>
+            We've got you covered.
           </p>
           <p className="text-center font-[family-name:var(--font-lato-sans)] text-[18px] leading-[34px] font-normal lg:text-left">
             <span className="text-blue-600 font-bold text-[#d80027]">
@@ -37,9 +37,7 @@ const Story = () => {
             <br />
             <br />
             <span>
-              We are always here when you need unwanted junk gone. We aim to
-              make the process easy for you and to treat you like a part of the
-              good news hauler family every step of the way.
+              Good News Haulers is your go-to team for junk removal in Arlington, Mansfield, Grand Prairie, and beyond.
             </span>
             <div className="mx-auto flex flex-row items-center justify-center gap-2 py-5">
               {JUNK_REMOVAL_IMAGES.map((item) => (
@@ -54,9 +52,7 @@ const Story = () => {
               ))}
             </div>
             <span>
-              With 10+ Years of experience and 3 trash trucks we always can get
-              the job right the first time. From boats to rvs, to any junk you
-              need removed from your home or business we are here for you,
+              Whether it’s a single item or a full property cleanout—we haul it all with care, speed, and a smile.
             </span>
           </p>
           <button className="group bg-blue-500 hover:text-blue-500 flex h-[54px] w-full max-w-[348px] cursor-pointer items-center justify-center gap-2.5 rounded-full px-8 py-4 text-white transition-colors hover:bg-[#f3f3f3]">

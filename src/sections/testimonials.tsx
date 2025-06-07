@@ -148,7 +148,7 @@ const Testimonials = () => {
                 variant="body1"
                 className="hidden text-[16px] md:text-[18px] lg:text-[20px]"
               >
-                Texas has been trusting Good News Haulers for 10+ years and our
+                Texas has been trusting Good News Haulers and our
                 work quality speaks for itself see what customers are saying!
               </Text>
             </div>
