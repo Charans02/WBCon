@@ -28,7 +28,7 @@ const Story = () => {
         <div className="flex w-full flex-col items-center gap-8">
           <p className="text-center font-[family-name:var(--font-sora-sans)] text-[28px] leading-[44px] font-normal uppercase lg:text-left">
             <span className="text-blue-700 font-extrabold">Got clutter? </span>
-            We've got you covered.
+            We&apos;ve got you covered.
           </p>
           <p className="text-center font-[family-name:var(--font-lato-sans)] text-[18px] leading-[34px] font-normal lg:text-left">
             <span className="text-blue-600 font-bold text-[#d80027]">
