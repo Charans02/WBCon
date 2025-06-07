@@ -1,6 +1,6 @@
 import {
   Facebook,
-  Instagram,
+  // Instagram,
   // Twitter,
   // Youtube,
   Mail,
@@ -13,27 +13,27 @@ export const CONTACT_INFO = [
   {
     name: "Email",
     icon: <Mail size={16} className="stroke-foreground fill-background" />,
-    value: "Trash.lion.llc@gmail.com",
+    value: "kreeves@goodnewshaulers.com",
   },
   {
     name: "Address",
 
     icon: <MapPin size={16} className="stroke-foreground fill-background" />,
-    value: "Philadelphia , Pa",
+    value: "5904 S. Cooper St. Suite 104 #905 Arlington TX 76017",
   },
   {
     name: "Phone",
     icon: <Phone size={16} className="stroke-foreground fill-background" />,
-    value: "267-356-1542",
+    value: "817-681-2020",
   },
 ];
 
 export const SOCIAL_LINKS = [
-  {
-    name: "Instagram",
-    icon: <Instagram size={24} />,
-    url: "/",
-  },
+  // {
+  //   name: "Instagram",
+  //   icon: <Instagram size={24} />,
+  //   url: "/",
+  // },
   // {
   //   name: "Twitter",
   //   icon: <Twitter size={24} />,
@@ -42,7 +42,7 @@ export const SOCIAL_LINKS = [
   {
     name: "Facebook",
     icon: <Facebook size={24} />,
-    url: "/",
+    url: "https://www.facebook.com/share/18x1YEk9EE/?mibextid=wwXIfr",
   },
   // {
   //   name: "Youtube",
@@ -72,22 +72,25 @@ export const QUICK_LINKS = [
 
 export const SERVICES: ServiceType[] = [
   {
-    image: "/images/service_1.png",
+    image: "/images/service_1.jpg",
     title: "Property clean outs",
     description:
       "If you recently purchased a house or our trying to sell a house or had a tenant recently move out. We are the right guys for the job!",
+    imageHeight: 600,
   },
   {
-    image: "/images/service_2.png",
+    image: "/images/service_2.jpg",
     title: "Auto/Boat/RV removal",
     description:
-      "We are one of the only junk removal companies in Philadelphia who are  able to get your car, boat or rv stuck in your driveway gone today!",
+      "We are one of the only junk removal companies in Texas who are  able to get your car, boat or rv stuck in your driveway gone today!",
+    imageHeight: 600,
   },
   {
-    image: "/images/service_3.png",
+    image: "/images/service_3.jpg",
     title: "Trash and Junk Removal",
     description:
       "We remove any trash or junk piling up in your home, garage or any where you need it gone!",
+    imageHeight: 600,
   },
 ];
 
@@ -96,14 +99,14 @@ export const TESTIMONIALS: TestimonialType[] = [
     avatar: "/images/avatar_1.png",
     name: "Pedro Beatty",
     content:
-      "Needed appliances removed out of a property I had, (refrigerator, oven, washer and, dryer). Trash Lion came out had them removed quickly. Will definitely use them again and refer to my friends that need junk removed.",
+      "Needed appliances removed out of a property I had, (refrigerator, oven, washer and, dryer). Good News Haulers came out had them removed quickly. Will definitely use them again and refer to my friends that need junk removed.",
     rating: 5,
   },
   {
     avatar: "/images/avatar_2.png",
     name: "Justin Gerhold Jr.",
     content:
-      "My tenant moved out of my property, needed to get all the old furniture out of the apartment. Trash Lion had it done in a day.",
+      "My tenant moved out of my property, needed to get all the old furniture out of the apartment. Good News Haulers had it done in a day.",
     rating: 5,
   },
   {
@@ -116,26 +119,10 @@ export const TESTIMONIALS: TestimonialType[] = [
 ];
 
 export const SERVICE_AREAS = [
-  "Horsham",
-  "Bryn Athyn",
-  "Willow Grove",
-  "Heaton",
-  "Hatboro",
-  "Newtown",
-  "Woodmont",
-  "Willow Manor",
-  "Warminster Heights",
-  "Bensalem, Bensalem Township",
-  "Levittown",
-  "Norristown",
-  "Philadelphia",
-  "Ivyland",
-  "Alnwick",
-  "Westbury",
-  "Warrington",
-  "Abington Township",
-  "Huntington Valley, Bryn Athyn",
-  "Southampton, Upper Southampton Township",
+  "Arlington",
+  "Mansfield",
+  "Grand Prairie",
+  "And Surrounding Areas in ",
 ];
 
 export const EXPERT_IMAGES: Expert[] = [
@@ -144,7 +131,7 @@ export const EXPERT_IMAGES: Expert[] = [
     img_group: [
       {
         id: 1,
-        img_url: "/images/image.png",
+        img_url: "/images/image.jpg",
         img_name: "Expert 1",
       },
       {

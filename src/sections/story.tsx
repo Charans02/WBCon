@@ -10,10 +10,10 @@ const Story = () => {
       className="flex flex-col items-center px-[80px] py-[60px]"
     >
       <Text variant="h2">
-        <span className="text-red">Our</span> Story!
+        <span className="text-indigo-800">Our</span> Story!
       </Text>
       <Text className="mt-8 hidden max-w-[702px] text-center text-[#525252]">
-        For 10 + years Trash Lion has been dedicated to keeping Philadelphia a
+        For 10 + years Good News Haulers has been dedicated to keeping Texas a
         cleaner place for both you and those around you
       </Text>
       <div className="mt-8 xl:mt-15 flex w-full max-w-[768px] flex-col items-center gap-8 md:gap-20 xl:max-w-full xl:flex-row xl:gap-30">
@@ -27,19 +27,19 @@ const Story = () => {
         </div>
         <div className="flex w-full flex-col items-center gap-8">
           <p className="text-center font-[family-name:var(--font-sora-sans)] text-[28px] leading-[44px] font-normal uppercase lg:text-left">
-            <span className="text-red font-extrabold">Trash lions, </span>
-            promise to Philadelphia
+            <span className="text-indigo-700 font-extrabold">Good News Haulers, </span>
+            promise to Texas
           </p>
           <p className="text-center font-[family-name:var(--font-lato-sans)] text-[18px] leading-[34px] font-normal lg:text-left">
-            <span className="font-bold text-[#d80027]">
-              Keeping Your Home And Philadelphia A Cleaner Place.
+            <span className="text-indigo-600 font-bold text-[#d80027]">
+              Keeping Your Home And Texas A Cleaner Place.
             </span>
             <br />
             <br />
             <span>
               We are always here when you need unwanted junk gone. We aim to
               make the process easy for you and to treat you like a part of the
-              trash lion family every step of the way.
+              good news hauler family every step of the way.
             </span>
             <div className="mx-auto flex flex-row items-center justify-center gap-2 py-5">
               {JUNK_REMOVAL_IMAGES.map((item) => (

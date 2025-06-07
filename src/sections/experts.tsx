@@ -46,13 +46,13 @@ const Experts = () => {
                   className="max-w-[517px] text-center xl:text-left"
                 >
                   See Our Junk Removal
-                  <span className="text-red"> Experts </span>
+                  <span className="text-indigo-600"> Experts </span>
                   At Work!
                 </Text>
               </div>
               <p className="hidden max-w-[478px] text-center font-[family-name:var(--font-sora-sans)] text-[19px] leading-[30px] sm:block xl:text-left">
-                What&apos;s stopping your dreams from becoming a reality. Trash
-                Lion will get your area looking right.
+                What&apos;s stopping your dreams from becoming a reality. Good News
+                Haulers will get your area looking right.
               </p>
             </div>
 

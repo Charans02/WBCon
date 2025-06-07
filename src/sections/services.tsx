@@ -14,7 +14,7 @@ const Services = () => {
           variant="h2"
           className="max-w-[768px] text-center xl:max-w-[1146px]"
         >
-          We <span className="text-red">remove any unwanted junk</span> you have
+          We <span className="text-indigo-700">remove any unwanted junk</span> you have
           laying around and need gone!
         </Text>
         <div className="mt-8 flex flex-col justify-between gap-8 lg:mt-16 xl:flex-row">
@@ -30,6 +30,7 @@ const Services = () => {
 export default Services;
 
 const ServiceCard = ({ s }: { s: ServiceType }) => {
+  const imageHeight = s.imageHeight || 260; // fallback
   // Function to format the title with colored parts
   const formatTitle = (title: string) => {
     if (title === "Property clean outs") {
@@ -67,7 +68,10 @@ const ServiceCard = ({ s }: { s: ServiceType }) => {
 
   return (
     <div className="flex w-full max-w-[768px] flex-1 flex-col items-center rounded-2xl bg-white px-6 py-8 shadow">
-      <div className="relative h-[156px] w-full overflow-hidden rounded-sm md:h-[260px]">
+      <div
+        className="relative w-full overflow-hidden rounded-sm"
+        style={{ height: `${imageHeight}px` }}
+      >
         <Image
           src={s.image}
           alt=""

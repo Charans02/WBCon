@@ -110,7 +110,7 @@ const Comparison = () => {
                 </Text>
                 <p className="mt-4 hidden text-center font-[family-name:var(--font-sora-sans)] text-[25px] leading-[30px] font-semibold text-white/70 sm:block">
                   <span className="font-extrabold">
-                    No job is to big for the lions
+                    No job is to big for the Haulers
                   </span>
                   {"  "}
                   we eat your junk for breakfast.
@@ -149,11 +149,11 @@ const Comparison = () => {
                     handle={
                       <ReactCompareSliderHandle
                         buttonStyle={{
-                          backgroundColor: "red",
+                          backgroundColor: "#4f46e5",
                         }}
                         linesStyle={{
                           width: lineWidth,
-                          background: "red",
+                          background: "#4f46e5",
                         }}
                       />
                     }

@@ -142,27 +142,27 @@ const Testimonials = () => {
               <Text variant="h2">
                 Read what our
                 <br />
-                <span className="text-red"> customers are saying!</span>
+                <span className="text-indigo-700"> customers are saying!</span>
               </Text>
               <Text
                 variant="body1"
                 className="hidden text-[16px] md:text-[18px] lg:text-[20px]"
               >
-                Philadelphia has been trusting Trash Lion for 10+ years and our
+                Texas has been trusting Good News Haulers for 10+ years and our
                 work quality speaks for itself see what customers are saying!
               </Text>
             </div>
             <div className="sm:mt-0 flex sm:my-auto mx-auto lg:mx-0 lg:mt-5 xl:mt-13 sm:mr-auto mb-8">
               <div className="mt-4 flex space-x-6">
                 <button
-                  className="bg-red hover:bg-red/80 flex h-10 w-10 items-center justify-center rounded-full text-white transition-colors"
+                  className="bg-indigo-600 hover:bg-red/80 flex h-10 w-10 items-center justify-center rounded-full text-white transition-colors"
                   onClick={scrollPrev}
                   aria-label="Previous testimonial"
                 >
                   <ChevronLeft size={24} />
                 </button>
                 <button
-                  className="bg-red hover:bg-red/80 flex h-10 w-10 items-center justify-center rounded-full text-white transition-colors"
+                  className="bg-indigo-600 hover:bg-red/80 flex h-10 w-10 items-center justify-center rounded-full text-white transition-colors"
                   onClick={scrollNext}
                   aria-label="Next testimonial"
                 >

@@ -7,7 +7,7 @@ const CTA = () => {
   return (
     <div className="bg-white">
       <section className="px-20 py-10">
-        <div className="bg-red-gradient relative flex w-full flex-col items-center gap-5 rounded-3xl px-10 py-10 text-white sm:gap-8 lg:px-20 xl:gap-10 xl:px-[100px] xl:py-20">
+        <div className="bg-gradient-to-r from-indigo-400 to-indigo-600 relative flex w-full flex-col items-center gap-5 rounded-3xl px-10 py-10 text-white sm:gap-8 lg:px-20 xl:gap-10 xl:px-[100px] xl:py-20">
           <Image
             src="/images/cta-pattern.png"
             alt=""
