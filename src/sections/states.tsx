@@ -27,7 +27,7 @@ const States = () => {
             className="max-w-[467px] text-center md:max-w-full xl:text-left"
           >
             Your Junk Removal Solution,
-            <span className="text-indigo-700"> Good News Haulers!</span>
+            <span className="text-blue-700"> Good News Haulers!</span>
           </Text>
           <Text className="mt-6 max-w-[516px] text-center text-[#525252] md:max-w-full xl:text-left">
             Whether you are looking for a small junk removal job or a whole
@@ -42,7 +42,7 @@ const States = () => {
               >
                 <Text variant="h2">
                   {state.content}
-                  {state.more && <span className="text-red">+</span>}
+                  {state.more && <span className="text-blue-600">+</span>}
                 </Text>
                 <Text variant="body2" className="text-[#525252]">
                   {state.description}

@@ -11,7 +11,7 @@ const WhyChoose = () => {
           <Text variant="h2" className="text-center">
             Why Texas
             <br />
-            <span className="text-indigo-600"> Loves Good News Haulers</span>
+            <span className="text-blue-600"> Loves Good News Haulers</span>
           </Text>
           <div className="grid grid-cols-1 gap-10 md:grid-cols-2">
             <div className="flex items-center gap-3">
@@ -47,7 +47,7 @@ const WhyChoose = () => {
               </p>
             </div>
           </div>
-          <button className="bg-indigo-600 w-full cursor-pointer rounded-full px-8 py-6">
+          <button className="bg-blue-600 w-full cursor-pointer rounded-full px-8 py-6">
             <Text variant="button" className="text-white">
               Get started today
             </Text>
@@ -62,7 +62,7 @@ const WhyChoose = () => {
               className="object-cover"
             />
           </div>
-          <div className="absolute bottom-[0px] flex h-[80px] w-full items-center justify-center bg-indigo-600">
+          <div className="absolute bottom-[0px] flex h-[80px] w-full items-center justify-center bg-blue-600">
             <p className="font-[family-name:var(--font-lato-sans)] text-[18px] md:text-[30px] md:leading-[60px] font-semibold text-white">
               10+ Years Of Experience
             </p>

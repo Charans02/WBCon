@@ -10,7 +10,7 @@ const Story = () => {
       className="flex flex-col items-center px-[80px] py-[60px]"
     >
       <Text variant="h2">
-        <span className="text-indigo-800">Our</span> Story!
+        <span className="text-blue-800">Our</span> Story!
       </Text>
       <Text className="mt-8 hidden max-w-[702px] text-center text-[#525252]">
         For 10 + years Good News Haulers has been dedicated to keeping Texas a
@@ -27,11 +27,11 @@ const Story = () => {
         </div>
         <div className="flex w-full flex-col items-center gap-8">
           <p className="text-center font-[family-name:var(--font-sora-sans)] text-[28px] leading-[44px] font-normal uppercase lg:text-left">
-            <span className="text-indigo-700 font-extrabold">Good News Haulers, </span>
+            <span className="text-blue-700 font-extrabold">Good News Haulers, </span>
             promise to Texas
           </p>
           <p className="text-center font-[family-name:var(--font-lato-sans)] text-[18px] leading-[34px] font-normal lg:text-left">
-            <span className="text-indigo-600 font-bold text-[#d80027]">
+            <span className="text-blue-600 font-bold text-[#d80027]">
               Keeping Your Home And Texas A Cleaner Place.
             </span>
             <br />
@@ -59,12 +59,12 @@ const Story = () => {
               need removed from your home or business we are here for you,
             </span>
           </p>
-          <button className="group bg-red hover:text-red flex h-[54px] w-full max-w-[348px] cursor-pointer items-center justify-center gap-2.5 rounded-full px-8 py-4 text-white transition-colors hover:bg-[#f3f3f3]">
+          <button className="group bg-blue-500 hover:text-blue-500 flex h-[54px] w-full max-w-[348px] cursor-pointer items-center justify-center gap-2.5 rounded-full px-8 py-4 text-white transition-colors hover:bg-[#f3f3f3]">
             <div className="relative">
               <MessageCircle size={24} />
               <Phone
                 size={10}
-                className="group-hover:fill-red absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 fill-white"
+                className="group-hover:fill-blue-500 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 fill-white"
               />
             </div>
             <p className="font-[family-name:var(--font-sora-sans)] text-[16px] leading-[100%] font-semibold uppercase">

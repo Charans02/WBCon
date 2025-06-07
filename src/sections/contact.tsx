@@ -66,12 +66,12 @@ const Contact = () => {
             height={349}
             className="border-red mt-8 w-full rounded-md border shadow sm:rounded-lg xl:rounded-xl"
           /> */}
-          <div className="border-indigo-500 mx-auto mt-8 h-[500px] overflow-hidden rounded-md border shadow sm:rounded-lg xl:rounded-xl">
+          <div className="border-blue-500 mx-auto mt-8 h-[500px] overflow-hidden rounded-md border shadow sm:rounded-lg xl:rounded-xl">
             <Map posix={[32.705002, -97.122780]} markers={markers} />
           </div>
         </div>
         <div className="flex w-full flex-1 flex-col items-center gap-4 rounded-2xl bg-white p-8 shadow">
-          <p className="text-red mb-8 text-center font-[family-name:var(--font-sora-sans)] text-[40px] leading-[40px] font-semibold xl:text-left">
+          <p className="text-blue-800 mb-8 text-center font-[family-name:var(--font-sora-sans)] text-[40px] leading-[40px] font-semibold xl:text-left">
             Reach out to Good News Haulers!
           </p>
           <form
@@ -150,7 +150,7 @@ const Contact = () => {
             <button
               type="submit"
               disabled={loading}
-              className="bg-red mt-8 flex w-full cursor-pointer items-center justify-center gap-3 rounded-2xl px-6 py-5 text-white disabled:opacity-70"
+              className="bg-blue-800 mt-8 flex w-full cursor-pointer items-center justify-center gap-3 rounded-2xl px-6 py-5 text-white disabled:opacity-70"
             >
               <CircleChevronRight size={20} />
               <Text variant="button">

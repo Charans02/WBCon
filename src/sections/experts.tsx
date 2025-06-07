@@ -46,7 +46,7 @@ const Experts = () => {
                   className="max-w-[517px] text-center xl:text-left"
                 >
                   See Our Junk Removal
-                  <span className="text-indigo-600"> Experts </span>
+                  <span className="text-blue-600"> Experts </span>
                   At Work!
                 </Text>
               </div>

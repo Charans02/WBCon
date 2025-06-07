@@ -63,7 +63,7 @@ const Header = () => {
         <div className="mx-auto flex max-w-[1512px] flex-row-reverse items-center justify-between gap-1.5 px-[20px] py-3 md:grid md:grid-cols-3 md:px-[35px] lg:grid lg:h-[92px] lg:grid-cols-3 lg:px-[60px] lg:py-1 xl:flex xl:h-fit xl:flex-row xl:py-4 2xl:grid 2xl:grid-cols-3 2xl:items-center 2xl:px-[60px]">
           <div className="hidden gap-12 xl:flex 2xl:justify-self-start">
             <Link href="#story" onClick={(e) => handleNavClick(e, "story")}>
-              <p className="hover:text-red font-[family-name:var(--font-sora-sans)] leading-[100%] font-normal transition-all hover:underline xl:text-[18px] 2xl:text-[20px]">
+              <p className="hover:text-blue-500 font-[family-name:var(--font-sora-sans)] leading-[100%] font-normal transition-all hover:underline xl:text-[18px] 2xl:text-[20px]">
                 About
               </p>
             </Link>
@@ -71,7 +71,7 @@ const Header = () => {
               href="#testimonials"
               onClick={(e) => handleNavClick(e, "testimonials")}
             >
-              <p className="hover:text-red font-[family-name:var(--font-sora-sans)] leading-[100%] font-normal transition-all hover:underline xl:text-[18px] 2xl:text-[20px]">
+              <p className="hover:text-blue-500 font-[family-name:var(--font-sora-sans)] leading-[100%] font-normal transition-all hover:underline xl:text-[18px] 2xl:text-[20px]">
                 Reviews
               </p>
             </Link>
@@ -79,14 +79,14 @@ const Header = () => {
               href="#services"
               onClick={(e) => handleNavClick(e, "services")}
             >
-              <p className="hover:text-red font-[family-name:var(--font-sora-sans)] leading-[100%] font-normal transition-all hover:underline xl:text-[18px] 2xl:text-[20px]">
+              <p className="hover:text-blue-500 font-[family-name:var(--font-sora-sans)] leading-[100%] font-normal transition-all hover:underline xl:text-[18px] 2xl:text-[20px]">
                 Services
               </p>
             </Link>
           </div>
 
           <button
-            className="hover:text-red col-start-1 block cursor-pointer transition-colors xl:hidden"
+            className="hover:text-blue-500 col-start-1 block cursor-pointer transition-colors xl:hidden"
             onClick={handleClick}
           >
             <AlignJustify className="size-8" />
@@ -100,8 +100,8 @@ const Header = () => {
             <Image
               src="/images/logo.png"
               alt="Trash Lion Logo"
-              width={134}
-              height={122}
+              width={224}
+              height={102}
               className="block h-[34px] w-[38px] md:hidden xl:h-[122px] xl:w-[134px]"
             />
             <p className="font-[family-name:var(--font-sora-sans)] text-[13px] leading-[100%] font-semibold md:text-[20px] xl:text-[23px]">
@@ -110,9 +110,9 @@ const Header = () => {
             <Image
               src="/images/logo.png"
               alt="Trash Lion Logo"
-              width={134}
-              height={122}
-              className="hidden h-[34px] w-[38px] md:block md:h-[69px] md:w-[77px] xl:h-[80px] xl:w-[95px]"
+              width={224}
+              height={102}
+              className="hidden h-[34px] w-[58px] md:block md:h-[69px] md:w-[87px] xl:h-[80px] xl:w-[105px]"
             />
             <p className="font-[family-name:var(--font-sora-sans)] text-[13px] leading-[100%] font-semibold md:text-[20px] xl:text-[23px]">
               Haulers
@@ -131,9 +131,9 @@ const Header = () => {
               <Image
                 src="/images/logo.png"
                 alt="Trash Lion Logo"
-                width={154}
-                height={142}
-                className="h-[120px] w-[135px]"
+                width={224}
+                height={102}
+                className="h-[120px] w-[205px]"
               />
               <p className="font-[family-name:var(--font-sora-sans)] text-[25px] leading-[100%] font-semibold">
                 Haulers
@@ -143,13 +143,13 @@ const Header = () => {
 
           <div className="hidden items-center gap-20 md:col-start-3 md:flex md:justify-self-end 2xl:justify-self-end 2xl:gap-12">
             <div className="hidden items-center gap-2.5 text-nowrap xl:flex">
-              <PhoneCall size={30} fill="#ff4040" stroke="none" />
+              <PhoneCall size={30} fill="#0000FF" stroke="none" />
               <p className="font-[family-name:var(--font-sora-sans)] text-[20px] leading-[100%] font-bold">
                 817 - 681 - 2020
               </p>
             </div>
             <button
-              className="group bg-indigo-600 hover:text-indigo-600 flex cursor-pointer items-center gap-2.5 rounded-full px-9 py-3 transition-colors hover:bg-white 2xl:w-fit 2xl:text-nowrap"
+              className="group bg-blue-600 hover:text-blue-600 flex cursor-pointer items-center gap-2.5 rounded-full px-9 py-3 transition-colors hover:bg-white 2xl:w-fit 2xl:text-nowrap"
               onClick={() => {
                 const phone = "+18176812020";
                 window.open(`tel:${phone}`, "_self");
@@ -159,7 +159,7 @@ const Header = () => {
                 <MessageCircle size={24} />
                 <Phone
                   size={10}
-                  className="group-hover:fill-indigo-600 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 fill-white"
+                  className="group-hover:fill-blue-900 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 fill-white"
                 />
               </div>
               <p className="hidden font-[family-name:var(--font-sora-sans)] text-[16px] leading-[100%] font-semibold lg:block">
@@ -172,7 +172,7 @@ const Header = () => {
         <div className="relative flex h-screen items-center justify-center bg-black">
           <div className="flex flex-col items-center gap-18">
             <Link href="#story" onClick={(e) => handleNavClick(e, "story")}>
-              <p className="hover:text-red font-[family-name:var(--font-sora-sans)] text-[25px] leading-[100%] font-normal transition-all">
+              <p className="hover:text-blue-500 font-[family-name:var(--font-sora-sans)] text-[25px] leading-[100%] font-normal transition-all">
                 About
               </p>
             </Link>
@@ -180,7 +180,7 @@ const Header = () => {
               href="#testimonials"
               onClick={(e) => handleNavClick(e, "testimonials")}
             >
-              <p className="hover:text-red font-[family-name:var(--font-sora-sans)] text-[25px] leading-[100%] font-normal transition-all">
+              <p className="hover:text-blue-500 font-[family-name:var(--font-sora-sans)] text-[25px] leading-[100%] font-normal transition-all">
                 Reviews
               </p>
             </Link>
@@ -188,13 +188,13 @@ const Header = () => {
               href="#services"
               onClick={(e) => handleNavClick(e, "services")}
             >
-              <p className="hover:text-red font-[family-name:var(--font-sora-sans)] text-[25px] leading-[100%] font-normal transition-all">
+              <p className="hover:text-blue-500 font-[family-name:var(--font-sora-sans)] text-[25px] leading-[100%] font-normal transition-all">
                 Services
               </p>
             </Link>
           </div>
           <button
-            className="hover:text-red absolute top-6 right-6 block cursor-pointer transition-colors"
+            className="hover:text-blue-500 absolute top-6 right-6 block cursor-pointer transition-colors"
             onClick={handleClick}
           >
             <X className="size-8" />

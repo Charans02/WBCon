@@ -12,10 +12,10 @@ const Hero = () => {
             <Image
               src="/images/truck_no_bg.png"
               alt="Trash Lion truck"
-              width={753}
-              height={937}
+              width={803}
+              height={987}
               quality={100}
-              className="mx-auto w-full max-w-[280px] scale-x-[-1] object-contain md:max-w-[340px] lg:max-w-[400px] xl:max-w-[500px]"
+              className="mx-auto w-full max-w-[280px] scale-x-[1] object-contain md:max-w-[340px] lg:max-w-[400px] xl:max-w-[500px]"
               priority
             />
           </div>
@@ -24,7 +24,7 @@ const Hero = () => {
               variant="h1"
               className="text-center text-[38px] leading-[50px] sm:text-[28px] sm:leading-[43px] md:text-[34px] md:leading-[43px] lg:text-left xl:text-left xl:text-[55px] xl:leading-[78px]"
             >
-              <span className="text-indigo-500 font-extrabold">
+              <span className="text-blue-900 font-extrabold">
                 Texas&apos;s
               </span>
               <br />
