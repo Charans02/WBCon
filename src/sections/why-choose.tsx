@@ -62,7 +62,7 @@ const WhyChoose = () => {
           </button>
         </div>
         <div className="relative w-full overflow-hidden xl:ml-7 flex-5/11 rounded-2xl">
-          <div className="relative h-[480px] w-full">
+          <div className="relative h-[680px] w-full">
             <Image
               src="/images/trash.jpg"
               alt=""

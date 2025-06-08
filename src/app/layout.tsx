@@ -20,8 +20,8 @@ const soraSans = Sora({
 });
 
 export const metadata: Metadata = {
-  title: "Good News Haulers | Texas's #1 Top Rated Junk Removal Team",
-  description: "Texas's #1 Top Rated Junk Removal Team",
+  title: "Good News Haulers | Faith-Driven Junk Removal Done Right",
+  description: "Fast, Affordable, Reliable",
 };
 
 export default function RootLayout({

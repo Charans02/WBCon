@@ -142,7 +142,7 @@ const Testimonials = () => {
               <Text variant="h2">
                 Read what our
                 <br />
-                <span className="text-blue-800"> customers are saying!</span>
+                <span className="text-blue-600"> customers are saying!</span>
               </Text>
               <Text
                 variant="body1"
