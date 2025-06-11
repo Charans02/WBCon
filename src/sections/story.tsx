@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import { MessageCircle, Phone } from "lucide-react";
 import { Text } from "@/components/ui";
@@ -52,10 +53,16 @@ const Story = () => {
               ))}
             </div>
             <span>
-              Whether it’s a single item or a full property cleanout—we haul it all with care, speed, and a smile.
+              Whether it&apos;s a single item or a full property cleanout—we haul it all with care, speed, and a smile.
             </span>
           </p>
-          <button className="group bg-blue-500 hover:text-blue-500 flex h-[54px] w-full max-w-[348px] cursor-pointer items-center justify-center gap-2.5 rounded-full px-8 py-4 text-white transition-colors hover:bg-[#f3f3f3]">
+          <button 
+            className="group bg-blue-500 hover:text-blue-500 flex h-[54px] w-full max-w-[348px] cursor-pointer items-center justify-center gap-2.5 rounded-full px-8 py-4 text-white transition-colors hover:bg-[#f3f3f3]"
+            onClick={() => {
+              const phone = "+18176812020";
+              window.open(`tel:${phone}`, "_self");
+            }}
+          >
             <div className="relative">
               <MessageCircle size={24} />
               <Phone
@@ -64,7 +71,7 @@ const Story = () => {
               />
             </div>
             <p className="font-[family-name:var(--font-sora-sans)] text-[16px] leading-[100%] font-semibold uppercase">
-              Get my junk gone
+              Click to Call Us
             </p>
           </button>
         </div>

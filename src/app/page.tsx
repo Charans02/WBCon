@@ -9,18 +9,18 @@ import {
   WhyChoose,
   Experts,
   ServiceAreas,
-  Contact,
+  // Contact,
   CTA,
-  JunkRemovalQuote,
+  // JunkRemovalQuote,
 } from "@/sections";
 
 export default function Home() {
   return (
     <>
       <Hero />
-      <div className="mt-[-165px] md:mt-[-70.84px] xl:mt-[-130px] xl:px-[60px]">
+      {/* <div className="mt-[-165px] md:mt-[-70.84px] xl:mt-[-130px] xl:px-[60px]">
         <JunkRemovalQuote />
-      </div>
+      </div> */}
       <Banner />
       <Services />
       <Comparison />
@@ -31,7 +31,7 @@ export default function Home() {
       <WhyChoose />
       <Experts />
       <ServiceAreas />
-      <Contact />
+      {/* <Contact /> */}
       <CTA />
     </>
   );
