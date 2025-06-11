@@ -60,6 +60,8 @@ const Story = () => {
           {/* ✅ iOS-safe, no-tracking call button */}
           <a
             href="tel:+18176812020"
+            target="_blank"
+            rel="noopener noreferrer"
             className="group bg-blue-500 hover:text-blue-500 flex h-[54px] w-full max-w-[348px] cursor-pointer items-center justify-center gap-2.5 rounded-full px-8 py-4 text-white transition-colors hover:bg-[#f3f3f3]"
           >
             <div className="relative">

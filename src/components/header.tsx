@@ -150,6 +150,8 @@ const Header = () => {
             </div>
             <a
               href="tel:+18176812020"
+              target="_blank"
+              rel="noopener noreferrer"
               className="group bg-blue-600 hover:text-blue-600 flex cursor-pointer items-center gap-2.5 rounded-full px-9 py-3 transition-colors hover:bg-white 2xl:w-fit 2xl:text-nowrap"
             >
               <div className="relative">
