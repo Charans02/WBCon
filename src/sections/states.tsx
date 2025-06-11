@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 import { Text } from "@/components/ui";
+import { AlignJustify, MessageCircle, Phone, PhoneCall, X } from "lucide-react";
 
 const STATES = [
   { content: 100, more: true, description: "Satisfied Customers" },
@@ -34,6 +35,23 @@ const States = () => {
             house clean-out, Good News Haulers can get it done. We are open 24/7 always
             taking call and new customers.
           </Text>
+          {/* Insert Button Below */}
+          <a
+            href="tel:+18176812020"
+            target="_blank"
+            className="group bg-blue-500 hover:text-blue-500 mt-6 flex h-[54px] w-full max-w-[348px] cursor-pointer items-center justify-center gap-2.5 rounded-full px-8 py-4 text-white transition-colors hover:bg-[#f3f3f3]"
+          >
+            <div className="relative">
+              <MessageCircle size={24} />
+              <Phone
+                size={10}
+                className="group-hover:fill-blue-500 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 fill-white"
+              />
+            </div>
+            <p className="font-[family-name:var(--font-sora-sans)] text-[16px] leading-[100%] font-semibold uppercase">
+              Click to Call Us
+            </p>
+          </a>
           <div className="mt-8 grid w-full grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-8">
             {STATES.map((state, index) => (
               <div

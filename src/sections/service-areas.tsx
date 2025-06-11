@@ -34,6 +34,19 @@ const ServiceAreas = () => {
               </div>
             ))}
           </div>
+          {/* 👇 Insert Call Button Below This Line */}
+          <a
+            href="tel:+18176812020"
+            target="_self"
+            className="group bg-blue-500 hover:text-blue-500 mt-8 flex h-[54px] w-full max-w-[348px] items-center justify-center gap-2.5 rounded-full px-8 py-4 text-white transition-colors hover:bg-[#f3f3f3]"
+          >
+            <div className="relative">
+              <MapPinCheckInside size={24} />
+            </div>
+            <p className="font-[family-name:var(--font-sora-sans)] text-[16px] leading-[100%] font-semibold uppercase">
+              Click to Call Us
+            </p>
+          </a>
         </div>
         <Image
           src="/images/truck_no_bg.png"
