@@ -148,12 +148,9 @@ const Header = () => {
                 817 - 681 - 2020
               </p>
             </div>
-            <button
+            <a
+              href="tel:+18176812020"
               className="group bg-blue-600 hover:text-blue-600 flex cursor-pointer items-center gap-2.5 rounded-full px-9 py-3 transition-colors hover:bg-white 2xl:w-fit 2xl:text-nowrap"
-              onClick={() => {
-                const phone = "+18176812020";
-                window.open(`tel:${phone}`, "_self");
-              }}
             >
               <div className="relative">
                 <MessageCircle size={24} />
@@ -165,7 +162,7 @@ const Header = () => {
               <p className="hidden font-[family-name:var(--font-sora-sans)] text-[16px] leading-[100%] font-semibold lg:block">
                 Contact Us
               </p>
-            </button>
+            </a>
           </div>
         </div>
       ) : (

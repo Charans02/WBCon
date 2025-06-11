@@ -56,12 +56,11 @@ const Story = () => {
               Whether it&apos;s a single item or a full property cleanout—we haul it all with care, speed, and a smile.
             </span>
           </p>
-          <button 
+
+          {/* ✅ iOS-safe, no-tracking call button */}
+          <a
+            href="tel:+18176812020"
             className="group bg-blue-500 hover:text-blue-500 flex h-[54px] w-full max-w-[348px] cursor-pointer items-center justify-center gap-2.5 rounded-full px-8 py-4 text-white transition-colors hover:bg-[#f3f3f3]"
-            onClick={() => {
-              const phone = "+18176812020";
-              window.open(`tel:${phone}`, "_self");
-            }}
           >
             <div className="relative">
               <MessageCircle size={24} />
@@ -73,7 +72,7 @@ const Story = () => {
             <p className="font-[family-name:var(--font-sora-sans)] text-[16px] leading-[100%] font-semibold uppercase">
               Click to Call Us
             </p>
-          </button>
+          </a>
         </div>
       </div>
     </section>
