@@ -99,6 +99,8 @@ const Hero = () => {
                 </Text>
               </div>
             </div>
+            {/* Add spacing here */}
+            <div className="h-8 md:h-10" />
             {/* ✅ iOS-safe, no-tracking call button */}
             <a
               href="tel:+18176812020"
