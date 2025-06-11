@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 import { Text } from "@/components/ui";
-import { AlignJustify, MessageCircle, Phone, PhoneCall, X } from "lucide-react";
+import { MessageCircle, Phone } from "lucide-react";
 
 const STATES = [
   { content: 100, more: true, description: "Satisfied Customers" },

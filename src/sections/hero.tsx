@@ -2,7 +2,7 @@ import Image from "next/image";
 import { CalendarRange, Truck, Globe } from "lucide-react";
 import { Text } from "@/components/ui";
 import { CUSTOMERS } from "@/lib/constants";
-import { AlignJustify, MessageCircle, Phone, PhoneCall, X } from "lucide-react";
+import { MessageCircle, Phone } from "lucide-react";
 
 const Hero = () => {
   return (
