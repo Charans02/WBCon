@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Lato, Sora } from "next/font/google";
 import { Toaster } from "sonner";
+import Script from "next/script";
 
 import Header from "@/components/header";
 import Footer from "@/components/footer";
@@ -32,6 +33,20 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${latoSans.variable} ${soraSans.variable} antialiased`}>
+        {/* ✅ Google Tag Manager */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=AW-16934137027"
+          strategy="afterInteractive"
+        />
+        <Script id="gtag-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-16934137027');
+          `}
+        </Script>
+
         <Header />
         <main className="overflow-hidden">{children}</main>
         <Footer />
