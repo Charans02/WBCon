@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { CalendarRange, Truck, Globe } from "lucide-react";
+import { CalendarRange, Truck } from "lucide-react";
 import { Text } from "@/components/ui";
 import { CUSTOMERS } from "@/lib/constants";
 import { MessageCircle, Phone } from "lucide-react";
