@@ -130,6 +130,26 @@ const Hero = () => {
           
           </div>
         </section>
+        <div className="bg-[#f6f6f6] py-6 px-4 md:px-10 lg:px-20">
+          <div className="mx-auto flex max-w-6xl flex-col items-center justify-center gap-3 text-center md:flex-row md:gap-6 md:text-left">
+            <Image
+              src="/images/google-review.png"
+              alt="Google Review Badge"
+              width={60}
+              height={60}
+              className="object-contain"
+            />
+            <div>
+              <p className="text-xl font-semibold text-gray-800">
+                Google Rating <span className="text-yellow-500">5.0</span>
+                <span className="ml-2 text-yellow-400">★ ★ ★ ★ ★</span>
+              </p>
+              <p className="text-sm font-medium text-gray-600">
+                Over <span className="font-bold text-black">60 Reviews</span>
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
