@@ -5,7 +5,9 @@ import {
   ReactCompareSliderHandle,
 } from "react-compare-slider";
 import { Text } from "@/components/ui";
+import Image from "next/image";
 import { useState, useEffect } from "react";
+import { CUSTOMERS } from "@/lib/constants";
 // Commented carousel imports for future use
 // import { ChevronLeft, ChevronRight } from "lucide-react";
 // import useEmblaCarousel from "embla-carousel-react";
@@ -115,6 +117,32 @@ const Comparison = () => {
                   {"  "}
                   junk trembles when the Haulers roll in!
                 </p>
+                {/* 👇 Add Happy Customers block here */}
+                {/* 👇 Add Happy Customers block here */}
+                <div className="mt-6 flex w-full justify-center">
+                  <div className="customers-container flex items-center gap-3 rounded-full border-none bg-white/10 px-4 py-2 sm:w-fit">
+                    <div className="flex items-center gap-0 sm:gap-3 md:gap-1 lg:gap-3">
+                      {CUSTOMERS.map((customer, index) => (
+                        <Image
+                          key={customer.id}
+                          src={customer.avatar_url}
+                          alt={customer.name}
+                          width={40}
+                          height={40}
+                          className={`relative ${index > 0 ? "ml-[-20px] sm:ml-0" : ""} rounded-full border-2 border-white`}
+                        />
+                      ))}
+                    </div>
+                    <div className="flex items-center gap-2 ml-4">
+                      <Text className="text-[18px] leading-[14px] font-semibold md:text-[22px] md:leading-[26px] lg:text-[22px] lg:leading-[26px] xl:text-[28px] xl:leading-[32px] text-white">
+                        60+
+                      </Text>
+                      <Text className="text-[13px] leading-[11px] font-extrabold md:text-[15px] md:leading-[20px] lg:text-[15px] lg:leading-[20px] xl:text-[15px] xl:leading-[20px] text-white/80">
+                        Happy Customers
+                      </Text>
+                    </div>
+                  </div>
+                </div>
               </div>
 
               {/* Commented carousel navigation buttons for future use
