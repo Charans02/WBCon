@@ -4,8 +4,8 @@ import { Text } from "@/components/ui";
 import { MessageCircle, Phone } from "lucide-react";
 
 const STATES = [
-  { content: 100, more: true, description: "Satisfied Customers" },
-  { content: 1, more: true, description: "Years Experience" },
+  { content: 60, more: true, description: "Satisfied Customers" },
+  { content: 5, more: true, description: "Years Experience" },
   { content: 3, more: true, description: "Trash Trucks" },
   { content: 6, more: true, description: "Counties We Service" },
 ];
@@ -49,7 +49,7 @@ const States = () => {
               />
             </div>
             <p className="font-[family-name:var(--font-sora-sans)] text-[16px] leading-[100%] font-semibold uppercase">
-              Click to Call Us
+              Call For Free Quote
             </p>
           </a>
           <div className="mt-8 grid w-full grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-8">

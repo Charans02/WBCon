@@ -97,7 +97,7 @@ export const SERVICES: ServiceType[] = [
 export const TESTIMONIALS: TestimonialType[] = [
   {
     avatar: "/images/avatar.png",
-    name: "Local Customer, Arlington TX",
+    name: "Jacqueline Smith, Arlington TX",
     content:
       "Kalin and his team showed up same day, were super friendly, and left the space spotless. I love supporting local businesses like this.",
     rating: 5,

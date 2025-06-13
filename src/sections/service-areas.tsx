@@ -44,7 +44,7 @@ const ServiceAreas = () => {
               <MapPinCheckInside size={24} />
             </div>
             <p className="font-[family-name:var(--font-sora-sans)] text-[16px] leading-[100%] font-semibold uppercase">
-              Click to Call Us
+              Call For Free Quote
             </p>
           </a>
         </div>

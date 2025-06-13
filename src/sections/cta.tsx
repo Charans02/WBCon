@@ -18,8 +18,8 @@ const CTA = () => {
             “Whatever you do, work at it with all your heart.”{" "}
             <span className="font-semibold underline">Colossians 3:23</span>
           </p>
-          <p className="text-center font-[family-name:var(--font-sora-sans)] text-[13px] leading-[20px] tracking-tight sm:text-[18px] sm:leading-[23px] xl:text-[27px] xl:leading-[38px]">
-            Fill out our quick contact form and will get back to you asap.
+          <p className="text-center font-[family-name:var(--font-sora-sans)] text-[25px] leading-[36px] tracking-tight font-bold sm:text-[18px] sm:leading-[23px] xl:text-[27px] xl:leading-[38px]">
+            Call Now & Save $50 Off Your First Job!
           </p>
           <div className="flex flex-col-reverse items-center justify-center gap-1 md:flex-row md:gap-16">
             <div className="flex items-center gap-4 xl:gap-5">
