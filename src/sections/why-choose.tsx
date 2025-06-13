@@ -72,7 +72,7 @@ const WhyChoose = () => {
           </div>
           <div className="absolute bottom-[0px] flex h-[80px] w-full items-center justify-center bg-blue-600">
             <p className="font-[family-name:var(--font-lato-sans)] text-[18px] md:text-[30px] md:leading-[60px] font-semibold text-white">
-              1+ Years Of Experience
+              5+ Years Of Experience
             </p>
           </div>
         </div>
