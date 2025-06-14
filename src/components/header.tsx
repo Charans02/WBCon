@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState, useCallback } from "react";
 import { AlignJustify, MessageCircle, Phone, PhoneCall, X } from "lucide-react";
+declare function gtag_report_conversion(url?: string): boolean;
 
 const Header = () => {
   const [isMenuOpened, setIsMenuOpened] = useState(false);
@@ -90,6 +91,7 @@ const Header = () => {
               href="tel:+18176812020"
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => gtag_report_conversion('tel:+18176812020')}
               className="flex items-center gap-1 rounded-full bg-blue-600 px-1 py-0.5 text-sm font-[family-name:var(--font-sora-sans)] text-white shadow-md transition hover:bg-blue-700"
               aria-label="Reserve Your Dumpster"
             >
@@ -166,6 +168,7 @@ const Header = () => {
               href="tel:+18176812020"
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => gtag_report_conversion('tel:+18176812020')}
               className="group bg-blue-600 hover:text-blue-600 flex cursor-pointer items-center gap-2.5 rounded-full px-9 py-3 transition-colors hover:bg-white 2xl:w-fit 2xl:text-nowrap"
             >
               <div className="relative">

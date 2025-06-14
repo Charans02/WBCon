@@ -2,6 +2,7 @@ import Image from "next/image";
 
 import { Text } from "@/components/ui";
 import { MessageCircle, Phone } from "lucide-react";
+declare function gtag_report_conversion(url?: string): boolean;
 
 const STATES = [
   { content: 60, more: true, description: "Satisfied Customers" },
@@ -39,6 +40,7 @@ const States = () => {
           <a
             href="tel:+18176812020"
             target="_blank"
+            onClick={() => gtag_report_conversion('tel:+18176812020')}
             className="group bg-blue-500 hover:text-blue-500 mt-6 flex h-[54px] w-full max-w-[348px] cursor-pointer items-center justify-center gap-2.5 rounded-full px-8 py-4 text-white transition-colors hover:bg-[#f3f3f3]"
           >
             <div className="relative">

@@ -33,7 +33,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${latoSans.variable} ${soraSans.variable} antialiased`}>
-        {/* ✅ Google Tag Manager */}
+        {/* ✅ Google Tag Script */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=AW-16934137027"
           strategy="afterInteractive"
@@ -44,6 +44,22 @@ export default function RootLayout({
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', 'AW-16934137027');
+
+            // ✅ Google Ads Phone Conversion Event Snippet
+            function gtag_report_conversion(url) {
+              var callback = function () {
+                if (typeof(url) !== 'undefined') {
+                  window.location = url;
+                }
+              };
+              gtag('event', 'conversion', {
+                send_to: 'AW-16934137027/BdFhCP3KzNgaEMPZ6Yo_',
+                value: 1.0,
+                currency: 'USD',
+                event_callback: callback
+              });
+              return false;
+            }
           `}
         </Script>
 

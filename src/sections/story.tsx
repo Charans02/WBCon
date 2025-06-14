@@ -3,6 +3,7 @@ import Image from "next/image";
 import { MessageCircle, Phone } from "lucide-react";
 import { Text } from "@/components/ui";
 import { JUNK_REMOVAL_IMAGES } from "@/lib/constants";
+declare function gtag_report_conversion(url?: string): boolean;
 
 const Story = () => {
   return (
@@ -62,6 +63,7 @@ const Story = () => {
             href="tel:+18176812020"
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() => gtag_report_conversion('tel:+18176812020')}
             className="group bg-blue-500 hover:text-blue-500 flex h-[54px] w-full max-w-[348px] cursor-pointer items-center justify-center gap-2.5 rounded-full px-8 py-4 text-white transition-colors hover:bg-[#f3f3f3]"
           >
             <div className="relative">

@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Text } from "@/components/ui";
 import { SERVICES } from "@/lib/constants";
 import { ServiceType } from "@/lib/types";
+// declare function gtag_report_conversion(url?: string): boolean;
 
 const Services = () => {
   return (
