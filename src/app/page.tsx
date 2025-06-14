@@ -1,3 +1,5 @@
+"use client"
+import { useState } from "react";
 import Banner from "@/components/banner";
 import {
   Hero,
@@ -15,9 +17,11 @@ import {
 } from "@/sections";
 
 export default function Home() {
+  const [heroInView, setHeroInView] = useState(true);
+
   return (
     <>
-      <Hero />
+      <Hero setHeroInView={setHeroInView} />
       {/* <div className="mt-[-165px] md:mt-[-70.84px] xl:mt-[-130px] xl:px-[60px]">
         <JunkRemovalQuote />
       </div> */}
@@ -32,7 +36,7 @@ export default function Home() {
       <Experts />
       <ServiceAreas />
       {/* <Contact /> */}
-      <CTA />
+      <CTA heroInView={heroInView} />
     </>
   );
 }
