@@ -85,15 +85,16 @@ const Header = () => {
             </Link>
           </div>
 
-          <div className="col-start-1 flex items-center gap-3 xl:hidden">
+          <div className="col-start-1 flex items-center ml-11 gap-0.5 xl:hidden">
             <a
               href="tel:+18176812020"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center rounded-full bg-blue-600 p-2 text-white shadow-md hover:bg-blue-700 transition"
-              aria-label="Call Us"
+              className="flex items-center gap-1 rounded-full bg-blue-600 px-1 py-0.5 text-sm font-[family-name:var(--font-sora-sans)] text-white shadow-md transition hover:bg-blue-700"
+              aria-label="Reserve Your Dumpster"
             >
-              <Phone size={20} />
+              <Phone size={18} />
+              <span className="font-bold">Call for a Free Quote</span>
             </a>
 
             <button
@@ -118,7 +119,7 @@ const Header = () => {
               className="block h-[34px] w-[38px] md:hidden xl:h-[122px] xl:w-[134px]"
             />
             <p className="font-[family-name:var(--font-sora-sans)] text-[13px] leading-[100%] font-semibold md:text-[20px] xl:text-[23px]">
-              Good News&nbsp;
+              Good News Haulers&nbsp;
             </p>
             <Image
               src="/images/logo.png"
@@ -127,9 +128,9 @@ const Header = () => {
               height={102}
               className="hidden h-[34px] w-[58px] md:block md:h-[69px] md:w-[87px] xl:h-[80px] xl:w-[105px]"
             />
-            <p className="font-[family-name:var(--font-sora-sans)] text-[13px] leading-[100%] font-semibold md:text-[20px] xl:text-[23px]">
-              Haulers
-            </p>
+            {/* <p className="font-[family-name:var(--font-sora-sans)] text-[13px] leading-[100%] font-semibold md:text-[20px] xl:text-[23px]">
+              .
+            </p> */}
           </Link>
 
           <div className="hidden 2xl:flex 2xl:justify-self-center">

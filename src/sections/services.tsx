@@ -30,7 +30,16 @@ const Services = () => {
 export default Services;
 
 const ServiceCard = ({ s }: { s: ServiceType }) => {
-  const imageHeight = s.imageHeight || 260; // fallback
+  const imageHeight = s.imageHeight || 260;
+
+  // Banner text based on service title
+  const getBannerText = (title: string) => {
+    if (title === "Residential Junk Removal") return "Arlington Curb Side Removal";
+    if (title === "Yard Waste & Debris") return "Mansfield Yard Waste Removal";
+    if (title === "Construction & Renovation Cleanup") return "Grand Prairie Construction Removal";
+    return "";
+  };
+
   // Function to format the title with colored parts
   const formatTitle = (title: string) => {
     if (title === "Residential Junk Removal") {
@@ -55,7 +64,7 @@ const ServiceCard = ({ s }: { s: ServiceType }) => {
         </>
       );
     }
-    // Fallback for any other titles
+
     return (
       <>
         <span className="text-blue-600 text-[26px] md:text-[30px]">
@@ -72,13 +81,19 @@ const ServiceCard = ({ s }: { s: ServiceType }) => {
         className="relative w-full overflow-hidden rounded-sm"
         style={{ height: `${imageHeight}px` }}
       >
+        {/* Banner Text */}
+        <div className="absolute top-0 left-0 w-full bg-blue-700 text-white text-center text-lg md:text-xl font-bold tracking-wide py-4 z-10">
+          {getBannerText(s.title)}
+        </div>
+
         <Image
           src={s.image}
-          alt=""
+          alt={s.title}
           fill
           className="object-cover object-center"
         />
       </div>
+
       <p className="mt-6 text-center text-[20px] leading-[25px] font-semibold md:text-[25px] md:leading-[32px]">
         {formatTitle(s.title)}
       </p>
