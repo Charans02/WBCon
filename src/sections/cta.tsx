@@ -8,7 +8,7 @@ const CTA = ({ heroInView }: { heroInView: boolean }) => {
   return (
     <div className="bg-white relative">
       {/* Sticky Button - only show when Hero is out of view */}
-      {!heroInView && (
+      {/* {!heroInView && (
         <div className="fixed bottom-4 left-1/2 z-50 -translate-x-1/2 w-full max-w-sm px-4 pb-[env(safe-area-inset-bottom,1rem)]">
           <a
             href="tel:+18176812020"
@@ -19,7 +19,7 @@ const CTA = ({ heroInView }: { heroInView: boolean }) => {
             Call For Free Quote
           </a>
         </div>
-      )}
+      )} */}
 
       <section className="px-5 sm:px-10 md:px-20 py-10 pb-32 sm:pb-24">
         <div className="relative flex w-full flex-col items-center gap-5 rounded-3xl bg-gradient-to-r from-blue-400 to-blue-600 px-6 py-10 text-white overflow-hidden">

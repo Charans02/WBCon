@@ -58,7 +58,7 @@ const Header = () => {
   };
 
   return (
-    <nav className="relative z-50 w-full bg-black/90 text-white backdrop-blur-2xl">
+    <nav className="fixed top-0 z-50 w-full bg-black/10 text-white backdrop-blur-2xl">
       {!isMenuOpened ? (
         <div className="mx-auto flex max-w-[1512px] flex-row-reverse items-center justify-between gap-1.5 px-[20px] py-3 md:grid md:grid-cols-3 md:px-[35px] lg:grid lg:h-[92px] lg:grid-cols-3 lg:px-[60px] lg:py-1 xl:flex xl:h-[152px] xl:flex-row xl:py-4 2xl:grid 2xl:grid-cols-3 2xl:items-center 2xl:px-[60px]">
           <div className="hidden gap-12 xl:flex 2xl:justify-self-start">
@@ -85,12 +85,25 @@ const Header = () => {
             </Link>
           </div>
 
-          <button
-            className="hover:text-blue-500 col-start-1 block cursor-pointer transition-colors xl:hidden"
-            onClick={handleClick}
-          >
-            <AlignJustify className="size-8" />
-          </button>
+          <div className="col-start-1 flex items-center gap-3 xl:hidden">
+            <a
+              href="tel:+18176812020"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center rounded-full bg-blue-600 p-2 text-white shadow-md hover:bg-blue-700 transition"
+              aria-label="Call Us"
+            >
+              <Phone size={20} />
+            </a>
+
+            <button
+              className="hover:text-blue-500 cursor-pointer transition-colors"
+              onClick={handleClick}
+              aria-label="Menu"
+            >
+              <AlignJustify className="size-8" />
+            </button>
+          </div>
 
           <Link
             href="#"
