@@ -85,7 +85,7 @@ const Header = () => {
             </Link>
           </div>
 
-          <div className="col-start-1 flex items-center ml-11 gap-0.5 xl:hidden">
+          <div className="col-start-1 flex items-center ml-1 gap-0.5 xl:hidden">
             <a
               href="tel:+18176812020"
               target="_blank"
