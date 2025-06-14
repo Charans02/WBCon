@@ -27,7 +27,7 @@ const Hero = ({ setHeroInView }: { setHeroInView?: (inView: boolean) => void }) 
       className="text-background bg-[url('/images/bg.png')] bg-cover bg-center pt-[58px] md:pt-[92px] xl:pt-[112px]"
     >
       <div className="bg-black-gradient">
-        <section className="flex flex-col-reverse gap-5 !pt-[20px] !pb-[190px] md:flex-row md:gap-[32.01px] md:!pt-[35px] md:!pb-[100px] xl:justify-between xl:gap-0 xl:!pb-[200px] 2xl:!pt-[60px] 2xl:gap-20">
+        <section className="flex flex-col-reverse gap-5 !pt-[20px] !pb-[40px] md:flex-row md:gap-[32.01px] md:!pt-[35px] md:!pb-[60px] xl:justify-between xl:gap-0 xl:!pb-[80px] 2xl:!pt-[60px] 2xl:gap-20">
           {/* Left: Truck Image */}
           <div className="hidden md:block md:w-5/12 m-auto">
             <Image
@@ -135,6 +135,8 @@ const Hero = ({ setHeroInView }: { setHeroInView?: (inView: boolean) => void }) 
 
               <a
                 href="tel:+18176812020"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="group bg-blue-500 hover:text-blue-500 flex h-[54px] w-full max-w-[348px] cursor-pointer items-center justify-center gap-2.5 rounded-full px-8 py-4 text-white hover:bg-[#f3f3f3]"
               >
                 <div className="relative">
