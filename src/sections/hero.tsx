@@ -3,7 +3,9 @@ import Image from "next/image";
 import { CalendarRange, Truck, MessageCircle, Phone } from "lucide-react";
 import { Text } from "@/components/ui";
 import { useRef, useEffect } from "react";
-declare function gtag_report_conversion(url?: string): boolean;
+import JunkRemovalQuote2 from "./junk-removal-quote2";
+
+// declare function gtag_report_conversion(url?: string): boolean;
 
 const Hero = ({ setHeroInView }: { setHeroInView?: (inView: boolean) => void }) => {
   const heroRef = useRef<HTMLDivElement | null>(null);
@@ -40,6 +42,10 @@ const Hero = ({ setHeroInView }: { setHeroInView?: (inView: boolean) => void }) 
               className="mx-auto w-full max-w-[280px] object-contain md:max-w-[340px] lg:max-w-[400px] xl:max-w-[500px]"
               priority
             />
+
+            <div className="mt-6">
+              <JunkRemovalQuote2 />
+            </div>
           </div>
 
           {/* Right: Text Content */}
@@ -134,12 +140,29 @@ const Hero = ({ setHeroInView }: { setHeroInView?: (inView: boolean) => void }) 
                 </span>
               </Text>
 
-              <a
+              {/* <a
                 href="tel:+18176812020"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => gtag_report_conversion('tel:+18176812020')}
                 className="group bg-blue-500 hover:text-blue-500 flex h-[54px] w-full max-w-[348px] cursor-pointer items-center justify-center gap-2.5 rounded-full px-8 py-4 text-white hover:bg-[#f3f3f3]"
+              > */}
+              <button
+                onClick={() => {
+                  const quoteSection = document.getElementById("quote");
+                  const headerOffset = 160; // Adjust this if your header height is different
+                  if (quoteSection) {
+                    const elementPosition = quoteSection.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.scrollY - headerOffset;
+
+                    window.scrollTo({
+                      top: offsetPosition,
+                      behavior: "smooth",
+                    });
+                  }
+                }}
+                className="group bg-blue-500 hover:text-blue-500 flex h-[54px] w-full max-w-[348px] cursor-pointer items-center justify-center gap-2.5 rounded-full px-8 py-4 text-white hover:bg-[#f3f3f3]"
+                aria-label="Scroll to Quote Section"
               >
                 <div className="relative">
                   <MessageCircle size={24} />
@@ -151,7 +174,7 @@ const Hero = ({ setHeroInView }: { setHeroInView?: (inView: boolean) => void }) 
                 <p className="font-semibold text-[16px] uppercase">
                   Call for Free Quote
                 </p>
-              </a>
+              </button>
             </div>
           </div>
         </section>

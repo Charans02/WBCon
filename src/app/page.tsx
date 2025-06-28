@@ -13,7 +13,7 @@ import {
   ServiceAreas,
   // Contact,
   CTA,
-  // JunkRemovalQuote,
+  JunkRemovalQuote,
 } from "@/sections";
 
 export default function Home() {
@@ -27,6 +27,9 @@ export default function Home() {
       </div> */}
       <Banner />
       <Services />
+      <JunkRemovalQuote />
+      <br />
+      <br />
       <Comparison />
       <States />
       <Testimonials />

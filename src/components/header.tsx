@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState, useCallback } from "react";
 import { AlignJustify, MessageCircle, Phone, PhoneCall, X } from "lucide-react";
-declare function gtag_report_conversion(url?: string): boolean;
+// declare function gtag_report_conversion(url?: string): boolean;
 
 const Header = () => {
   const [isMenuOpened, setIsMenuOpened] = useState(false);
@@ -87,17 +87,34 @@ const Header = () => {
           </div>
 
           <div className="col-start-1 flex items-center ml-1 gap-0.5 xl:hidden">
-            <a
+            {/* <a
               href="tel:+18176812020"
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => gtag_report_conversion('tel:+18176812020')}
               className="flex items-center gap-1 rounded-full bg-blue-600 px-1 py-0.5 text-sm font-[family-name:var(--font-sora-sans)] text-white shadow-md transition hover:bg-blue-700"
               aria-label="Reserve Your Dumpster"
+            > */}
+            <button
+              onClick={() => {
+                const quoteSection = document.getElementById("quote");
+                const headerOffset = 160; // Adjust this if your header height is different
+                if (quoteSection) {
+                  const elementPosition = quoteSection.getBoundingClientRect().top;
+                  const offsetPosition = elementPosition + window.scrollY - headerOffset;
+
+                  window.scrollTo({
+                    top: offsetPosition,
+                    behavior: "smooth",
+                  });
+                }
+              }}
+              className="flex md:hidden items-center gap-1 rounded-full bg-blue-600 px-0.9 py-3 text-sm font-[family-name:var(--font-sora-sans)] text-white shadow-md transition hover:bg-blue-700"
+              aria-label="Scroll to Quote Section"
             >
               <Phone size={18} />
-              <span className="font-bold">Call for a Free Quote</span>
-            </a>
+              <span className="font-bold">Contact Us</span>
+            </button>
 
             <button
               className="hover:text-blue-500 cursor-pointer transition-colors"
@@ -164,12 +181,29 @@ const Header = () => {
                 817 - 681 - 2020
               </p>
             </div>
-            <a
+            {/* <a
               href="tel:+18176812020"
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => gtag_report_conversion('tel:+18176812020')}
               className="group bg-blue-600 hover:text-blue-600 flex cursor-pointer items-center gap-2.5 rounded-full px-9 py-3 transition-colors hover:bg-white 2xl:w-fit 2xl:text-nowrap"
+            > */}
+            <button
+              onClick={() => {
+                const quoteSection = document.getElementById("quote");
+                const headerOffset = 160; // Adjust this if your header height is different
+                if (quoteSection) {
+                  const elementPosition = quoteSection.getBoundingClientRect().top;
+                  const offsetPosition = elementPosition + window.scrollY - headerOffset;
+
+                  window.scrollTo({
+                    top: offsetPosition,
+                    behavior: "smooth",
+                  });
+                }
+              }}
+              className="group bg-blue-600 hover:text-blue-600 flex cursor-pointer items-center gap-2.5 rounded-full px-9 py-3 transition-colors hover:bg-white 2xl:w-fit 2xl:text-nowrap"
+              aria-label="Scroll to Quote Section"
             >
               <div className="relative">
                 <MessageCircle size={24} />
@@ -181,7 +215,7 @@ const Header = () => {
               <p className="hidden font-[family-name:var(--font-sora-sans)] text-[16px] leading-[100%] font-semibold lg:block">
                 Contact Us
               </p>
-            </a>
+            </button>
           </div>
         </div>
       ) : (
