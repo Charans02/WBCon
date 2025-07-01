@@ -32,7 +32,7 @@ const States = () => {
             <span className="text-blue-700"> Wayman Bros Construction!</span>
           </Text>
           <Text className="mt-6 max-w-[516px] text-center text-[#525252] md:max-w-full xl:text-left">
-            We offer comprehensive home remodeling services in the Salt Lake City area. Regardless of your design preferences, you can count on us to create a space you'll love living in for years to come.
+            We offer comprehensive home remodeling services in the Salt Lake City area. Regardless of your design preferences, you can count on us to create a space you&apos;ll love living in for years to come.
           </Text>
           {/* Insert Button Below */}
           {/* <a

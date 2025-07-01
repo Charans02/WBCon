@@ -15,7 +15,7 @@ const Services = () => {
           variant="h2"
           className="max-w-[768px] text-center xl:max-w-[1146px]"
         >
-          If you're ready to<span className="text-blue-700"> transform your outdated house</span> into space
+          If you&apos;re ready to<span className="text-blue-700"> transform your outdated house</span> into space
           right for your family!
         </Text>
         <div className="mt-8 flex flex-col justify-between gap-8 lg:mt-16 xl:flex-row">
