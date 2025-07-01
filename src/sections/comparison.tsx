@@ -6,7 +6,7 @@ import { CUSTOMERS } from "@/lib/constants";
 
 const Comparison = () => {
   const [lineWidth, setLineWidth] = useState("4px");
-  lineWidth;
+  void lineWidth;
 
   // This is still here in case you later want to adjust something responsively
   useEffect(() => {
