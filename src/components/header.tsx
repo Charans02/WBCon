@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState, useCallback } from "react";
 import { AlignJustify, MessageCircle, Phone, PhoneCall, X } from "lucide-react";
+
 // declare function gtag_report_conversion(url?: string): boolean;
 
 const Header = () => {
@@ -135,17 +136,17 @@ const Header = () => {
               alt="Trash Lion Logo"
               width={224}
               height={102}
-              className="block h-[34px] w-[38px] md:hidden xl:h-[122px] xl:w-[134px]"
+              className="block h-[32px] w-[50px] md:hidden xl:h-[122px] xl:w-[134px]"
             />
             <p className="font-[family-name:var(--font-sora-sans)] text-[13px] leading-[100%] font-semibold md:text-[20px] xl:text-[23px]">
-              Good News Haulers&nbsp;
+              Wayman Bros Construction&nbsp;
             </p>
             <Image
               src="/images/logo.png"
               alt="Trash Lion Logo"
               width={224}
               height={102}
-              className="hidden h-[34px] w-[58px] md:block md:h-[69px] md:w-[87px] xl:h-[80px] xl:w-[105px]"
+              className="hidden h-[34px] w-[58px] md:block md:h-[50px] md:w-[140px] xl:h-[80px] xl:w-[105px]"
             />
             {/* <p className="font-[family-name:var(--font-sora-sans)] text-[13px] leading-[100%] font-semibold md:text-[20px] xl:text-[23px]">
               .
@@ -158,18 +159,18 @@ const Header = () => {
               className="flex items-center"
               onClick={(e) => handleNavClick(e, "top")}
             >
-              <p className="font-[family-name:var(--font-sora-sans)] text-[25px] leading-[100%] font-semibold">
-                Good News
+              <p className="font-[family-name:var(--font-sora-sans)] text-[20px] leading-[100%] font-semibold">
+                Wayman Bros
               </p>
               <Image
                 src="/images/logo.png"
                 alt="Trash Lion Logo"
                 width={224}
                 height={102}
-                className="h-[120px] w-[205px]"
+                className="h-[90px] w-[205px]"
               />
-              <p className="font-[family-name:var(--font-sora-sans)] text-[25px] leading-[100%] font-semibold">
-                Haulers
+              <p className="font-[family-name:var(--font-sora-sans)] text-[20px] leading-[100%] font-semibold">
+                Construction
               </p>
             </Link>
           </div>
@@ -178,7 +179,7 @@ const Header = () => {
             <div className="hidden items-center gap-2.5 text-nowrap xl:flex">
               <PhoneCall size={30} fill="#0000FF" stroke="none" />
               <p className="font-[family-name:var(--font-sora-sans)] text-[20px] leading-[100%] font-bold">
-                817 - 681 - 2020
+                801 - 654 - 1028
               </p>
             </div>
             {/* <a

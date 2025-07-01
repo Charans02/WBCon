@@ -10,11 +10,13 @@ import {
   Story,
   WhyChoose,
   Experts,
-  ServiceAreas,
+  // ServiceAreas,
   // Contact,
   CTA,
   JunkRemovalQuote,
 } from "@/sections";
+import FallMustHaves from "@/sections/FallMustHaves";
+import ConvertShowcase from "@/sections/ConvertShowcase"
 
 export default function Home() {
   const [heroInView, setHeroInView] = useState(true);
@@ -30,14 +32,16 @@ export default function Home() {
       <JunkRemovalQuote />
       <br />
       <br />
-      <Comparison />
+      <ConvertShowcase />
       <States />
       <Testimonials />
       <Story />
       <Banner />
       <WhyChoose />
       <Experts />
-      <ServiceAreas />
+      <FallMustHaves />
+      <Comparison />
+      {/* <ServiceAreas /> */}
       {/* <Contact /> */}
       <CTA heroInView={heroInView} />
     </>

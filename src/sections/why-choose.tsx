@@ -11,7 +11,7 @@ const WhyChoose = () => {
           <Text variant="h2" className="text-center">
             Why Choose
             <br />
-            <span className="text-blue-600"> Good News Haulers?</span>
+            <span className="text-blue-600"> Wayman Bros Construction?</span>
           </Text>
           <div className="grid grid-cols-1 gap-10 md:grid-cols-2">
             <div className="flex items-center gap-3">
@@ -27,7 +27,7 @@ const WhyChoose = () => {
                 <Check size={32} stroke="white" />
               </div>
               <p className="font-[family-name:var(--font-lato-sans)] text-[22px] leading-[32px] font-semibold">
-                $50 OFF First Pickup Special
+                $50 OFF First Service Special
               </p>
             </div>
             <div className="flex items-center gap-3">
@@ -64,7 +64,7 @@ const WhyChoose = () => {
         <div className="relative w-full overflow-hidden xl:ml-7 flex-5/11 rounded-2xl">
           <div className="relative h-[680px] w-full">
             <Image
-              src="/images/trash.jpg"
+              src="/images/picture5.jpg"
               alt=""
               fill
               className="object-cover"

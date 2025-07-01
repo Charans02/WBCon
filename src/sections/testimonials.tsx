@@ -135,7 +135,7 @@ const Testimonials = () => {
                 variant="body1"
                 className="hidden text-[13px] md:text-[15px] lg:text-[16px]"
               >
-                Texas has been trusting Good News Haulers and our
+                Salt Lake City has been trusting Wayman Bros Construction and our
                 work quality speaks for itself — see what customers are saying!
               </Text>
             </div>

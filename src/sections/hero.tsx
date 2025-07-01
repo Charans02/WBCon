@@ -3,9 +3,6 @@ import Image from "next/image";
 import { CalendarRange, Truck, MessageCircle, Phone } from "lucide-react";
 import { Text } from "@/components/ui";
 import { useRef, useEffect } from "react";
-import JunkRemovalQuote2 from "./junk-removal-quote2";
-
-// declare function gtag_report_conversion(url?: string): boolean;
 
 const Hero = ({ setHeroInView }: { setHeroInView?: (inView: boolean) => void }) => {
   const heroRef = useRef<HTMLDivElement | null>(null);
@@ -15,7 +12,7 @@ const Hero = ({ setHeroInView }: { setHeroInView?: (inView: boolean) => void }) 
 
     const observer = new IntersectionObserver(
       ([entry]) => {
-        setHeroInView(entry.isIntersecting); // true when Hero is in view
+        setHeroInView(entry.isIntersecting);
       },
       { threshold: 0.1 }
     );
@@ -31,31 +28,28 @@ const Hero = ({ setHeroInView }: { setHeroInView?: (inView: boolean) => void }) 
     >
       <div className="bg-black-gradient">
         <section className="flex flex-col-reverse gap-5 !pt-[20px] !pb-[40px] md:flex-row md:gap-[32.01px] md:!pt-[35px] md:!pb-[60px] xl:justify-between xl:gap-0 xl:!pb-[80px] 2xl:!pt-[60px] 2xl:gap-20">
-          {/* Left: Truck Image */}
-          <div className="hidden md:block md:w-5/12 m-auto">
+          
+          {/* LEFT: Single Picture */}
+          <div className="w-full md:w-5/12 flex justify-center items-center">
             <Image
-              src="/images/truck_no_bg.png"
-              alt="Trash Lion truck"
-              width={803}
-              height={987}
+              src="/images/picture.jpg" // <-- Replace with your image path
+              alt="Your New Picture"
+              width={800}
+              height={800}
               quality={100}
-              className="mx-auto w-full max-w-[280px] object-contain md:max-w-[340px] lg:max-w-[400px] xl:max-w-[500px]"
+              className="w-full max-w-[600px] object-contain rounded-2xl"
               priority
             />
-
-            <div className="mt-6">
-              <JunkRemovalQuote2 />
-            </div>
           </div>
 
-          {/* Right: Text Content */}
+          {/* RIGHT: Text Content */}
           <div className="flex h-fit w-full max-w-[710px] flex-col items-center gap-4 md:w-7/12 md:items-start lg:w-7/12 xl:w-7/12 2xl:w-1/2">
             <Text
               variant="h1"
               className="text-center text-[38px] leading-[50px] sm:text-[28px] sm:leading-[43px] md:text-[34px] md:leading-[43px] lg:text-left xl:text-left xl:text-[55px] xl:leading-[78px]"
             >
               <span className="text-blue-600 font-extrabold">
-                Arlington&apos;s Top-Rated Junk Removal Team
+                Salt Lake City&apos;s Top-Rated Construction Team
               </span>
               <br />
               Locally Owned and Faith-Driven.
@@ -63,7 +57,7 @@ const Hero = ({ setHeroInView }: { setHeroInView?: (inView: boolean) => void }) 
 
             <Text className="text-center text-[16px] leading-[23px] md:text-left lg:text-[21px] lg:leading-[26px] xl:text-left">
               <span className="leading-[33px] font-bold">
-                Serving Texas With Fast Same Day Service.
+                Serving Salt Lake City With Reliability.
               </span>
             </Text>
 
@@ -92,41 +86,13 @@ const Hero = ({ setHeroInView }: { setHeroInView?: (inView: boolean) => void }) 
               <div className="flex items-center gap-1.5">
                 <CalendarRange className="size-4 sm:size-5 lg:size-6" />
                 <Text className="text-[15px] font-semibold lg:text-[18px]">
-                  Same-Day Pickup
+                  24hr Remodel Service
                 </Text>
               </div>
               <div className="bg-background h-5 w-px" />
               <div className="flex items-center gap-1.5">
                 <Truck className="size-4 sm:size-5 lg:size-6" />
                 <Text className="text-[15px] font-semibold lg:text-[18px]">
-                  60+ 5 star reviews
-                </Text>
-              </div>
-            </div>
-
-            <div className="block md:hidden">
-              <Image
-                src="/images/truck_no_bg.png"
-                alt="Trash Lion truck"
-                width={553}
-                height={737}
-                quality={100}
-                className="mx-auto w-full max-w-[280px] object-contain"
-                priority
-              />
-            </div>
-            {/* Mobile-only Same-Day Pickup + Reviews */}
-            <div className="flex flex items-center justify-start gap-1.5 mt-4 md:hidden whitespace-nowrap">
-              <div className="flex items-center gap-1.5">
-                <CalendarRange className="size-4" />
-                <Text className="text-[15px] font-semibold">
-                  Same-Day Pickup
-                </Text>
-              </div>
-              <div className="bg-background h-5 w-px" />
-              <div className="flex items-center gap-1.5">
-                <Truck className="size-4" />
-                <Text className="text-[15px] font-semibold">
                   60+ 5 star reviews
                 </Text>
               </div>
@@ -140,17 +106,10 @@ const Hero = ({ setHeroInView }: { setHeroInView?: (inView: boolean) => void }) 
                 </span>
               </Text>
 
-              {/* <a
-                href="tel:+18176812020"
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={() => gtag_report_conversion('tel:+18176812020')}
-                className="group bg-blue-500 hover:text-blue-500 flex h-[54px] w-full max-w-[348px] cursor-pointer items-center justify-center gap-2.5 rounded-full px-8 py-4 text-white hover:bg-[#f3f3f3]"
-              > */}
               <button
                 onClick={() => {
                   const quoteSection = document.getElementById("quote");
-                  const headerOffset = 160; // Adjust this if your header height is different
+                  const headerOffset = 160;
                   if (quoteSection) {
                     const elementPosition = quoteSection.getBoundingClientRect().top;
                     const offsetPosition = elementPosition + window.scrollY - headerOffset;

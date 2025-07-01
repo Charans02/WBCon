@@ -12,10 +12,10 @@ const Footer = () => {
           <section className="flex !max-w-[640px] flex-col-reverse items-center justify-between gap-16 lg:!max-w-[860px] xl:!max-w-[1512px] xl:flex-row xl:items-start">
             <div className="flex flex-col items-center xl:w-2/5 xl:items-start">
               <Text variant="h4">
-                Good News<span className="text-blue-700"> Haulers</span>
+                Wayman Bros<span className="text-blue-700"> Construction</span>
               </Text>
               <Text className="mt-4">
-                We don&apos;t just haul junk. We restore peace of mind. We are open 24/7 ready to get any job done!
+                We don&apos;t just remodel your home. We restore peace of mind. We are open 24/7 ready to get any job done!
               </Text>
               <div className="mt-8 flex gap-8">
                 {SOCIAL_LINKS.map((link) => (

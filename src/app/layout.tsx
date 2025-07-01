@@ -6,6 +6,8 @@ import Script from "next/script";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 
+import StickyFooter from "@/components/StickyFooter";
+
 import "./globals.css";
 import "./custom-toast.css";
 
@@ -21,7 +23,7 @@ const soraSans = Sora({
 });
 
 export const metadata: Metadata = {
-  title: "Good News Haulers | Faith-Driven Junk Removal Done Right",
+  title: "Wayman Bros Construction | Faith-Driven Junk Removal Done Right",
   description: "Fast, Affordable, Reliable",
 };
 
@@ -57,6 +59,7 @@ export default function RootLayout({
 
         <Header />
         <main className="overflow-hidden">{children}</main>
+        <StickyFooter />
         <Footer />
         <Toaster
           position="top-right"

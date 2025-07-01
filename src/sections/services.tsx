@@ -15,8 +15,8 @@ const Services = () => {
           variant="h2"
           className="max-w-[768px] text-center xl:max-w-[1146px]"
         >
-          We <span className="text-blue-700">remove any unwanted junk</span> you have
-          laying around and need gone!
+          If you're ready to<span className="text-blue-700"> transform your outdated house</span> into space
+          right for your family!
         </Text>
         <div className="mt-8 flex flex-col justify-between gap-8 lg:mt-16 xl:flex-row">
           {SERVICES.map((s, idx) => (
@@ -35,9 +35,9 @@ const ServiceCard = ({ s }: { s: ServiceType }) => {
 
   // Banner text based on service title
   const getBannerText = (title: string) => {
-    if (title === "Residential Junk Removal") return "Arlington Curb Side Removal";
-    if (title === "Yard Waste & Debris") return "Mansfield Yard Waste Removal";
-    if (title === "Construction & Renovation Cleanup") return "Grand Prairie Construction Removal";
+    if (title === "Residential Junk Removal") return "Modern Makeover";
+    if (title === "Yard Waste & Debris") return "Custom Cabinetry & Storage";
+    if (title === "Construction & Renovation Cleanup") return "Complete Kitchen Remodel";
     return "";
   };
 
@@ -46,22 +46,22 @@ const ServiceCard = ({ s }: { s: ServiceType }) => {
     if (title === "Residential Junk Removal") {
       return (
         <>
-          <span className="text-blue-600">Residential</span>
-          <span> Junk Removal</span>
+          <span className="text-blue-600">Transform your outdated kitchen</span>
+          <span> into a modern culinary space</span>
         </>
       );
     } else if (title === "Yard Waste & Debris") {
       return (
         <>
-          <span className="text-blue-600">Yard Waste &</span>
-          <span> Debris</span>
+          <span className="text-blue-600">Maximize every inch of space with custom</span>
+          <span> cabinets, clever storage solutions</span>
         </>
       );
     } else if (title === "Construction & Renovation Cleanup") {
       return (
         <>
-          <span className="text-blue-600">Construction & Renovation</span>
-          <span> Cleanup</span>
+          <span className="text-blue-600">From flooring to fixtures, enjoy a</span>
+          <span> full-service kitchen renovation that revitalizes your space</span>
         </>
       );
     }
@@ -98,7 +98,7 @@ const ServiceCard = ({ s }: { s: ServiceType }) => {
       <p className="mt-6 text-center text-[20px] leading-[25px] font-semibold md:text-[25px] md:leading-[32px]">
         {formatTitle(s.title)}
       </p>
-      <Text className="mt-4 text-center text-[#525252]">{s.description}</Text>
+      {/* <Text className="mt-4 text-center text-[#525252]">{s.description}</Text> */}
     </div>
   );
 };

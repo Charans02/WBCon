@@ -3,28 +3,28 @@ import {
   // Instagram,
   // Twitter,
   // Youtube,
-  Mail,
+  // Mail,
   MapPin,
   Phone,
 } from "lucide-react";
 import { ServiceType, TestimonialType, Expert, ComparisonSet, JunkRemovalType, Customer } from "./types";
 
 export const CONTACT_INFO = [
-  {
-    name: "Email",
-    icon: <Mail size={16} className="stroke-foreground fill-background" />,
-    value: "kreeves@goodnewshaulers.com",
-  },
+  // {
+  //   name: "Email",
+  //   icon: <Mail size={16} className="stroke-foreground fill-background" />,
+  //   value: "kreeves@goodnewshaulers.com",
+  // },
   {
     name: "Address",
 
     icon: <MapPin size={16} className="stroke-foreground fill-background" />,
-    value: "5904 S. Cooper St. Suite 104 #905 Arlington TX 76017",
+    value: "SALT LAKE CITY, UT,  84015-1531",
   },
   {
     name: "Phone",
     icon: <Phone size={16} className="stroke-foreground fill-background" />,
-    value: "817-681-2020",
+    value: "801-654-1028",
   },
 ];
 
@@ -42,7 +42,7 @@ export const SOCIAL_LINKS = [
   {
     name: "Facebook",
     icon: <Facebook size={24} />,
-    url: "https://www.facebook.com/share/18x1YEk9EE/?mibextid=wwXIfr",
+    url: "https://www.facebook.com/waymanbrosconstructionut",
   },
   // {
   //   name: "Youtube",
@@ -96,10 +96,31 @@ export const SERVICES: ServiceType[] = [
 
 export const TESTIMONIALS: TestimonialType[] = [
   {
-    avatar: "/images/avatar.png",
-    name: "Jacqueline Smith, Arlington TX",
+    avatar: "/images/avatar_4.png",
+    name: "James R",
     content:
-      "Kalin and his team showed up same day, were super friendly, and left the space spotless. I love supporting local businesses like this.",
+      "We finally love our bathroom again! The team made the whole process easy.",
+    rating: 5,
+  },
+  {
+    avatar: "/images/avatar_5.jpg",
+    name: "Lisa M",
+    content:
+      "They turned our outdated kitchen into a dream space. Fast, Friendly and Professional.",
+    rating: 5,
+  },
+  {
+    avatar: "/images/avatar_1.png",
+    name: "Mark T",
+    content:
+      "Very happy  with our basement remodel. Cleanwork and Stayed on budget.",
+    rating: 5,
+  },
+  {
+    avatar: "/images/avatar_2.png",
+    name: "Evan P",
+    content:
+      "From start to finish everything was smooth. Highly recommend for any home upgrade.",
     rating: 5,
   },
 ];
@@ -247,12 +268,12 @@ export const JUNK_REMOVAL_IMAGES: JunkRemovalType[] = [
 export const CUSTOMERS: Customer[] = [
   {
     id: 1,
-    avatar_url: "/images/avatar_1.png",
+    avatar_url: "/images/avatar_4.png",
     name: "Pedro Beatty",
   },
   {
     id: 2,
-    avatar_url: "/images/avatar_2.png",
+    avatar_url: "/images/avatar_5.jpg",
     name: "Justin Gerhold Jr.",
   },
   {
@@ -262,7 +283,7 @@ export const CUSTOMERS: Customer[] = [
   },
   {
     id: 4,
-    avatar_url: "/images/avatar_1.png",
+    avatar_url: "/images/avatar_2.png",
     name: "John Doe",
   },
 ];

@@ -1,7 +1,7 @@
 // cta.tsx
 // import { useEffect, useState } from "react";
 import Image from "next/image";
-import { Mail, PhoneCall } from "lucide-react";
+import { PhoneCall } from "lucide-react";
 import { CONTACT_INFO } from "@/lib/constants";
 
 const CTA = ({ heroInView }: { heroInView: boolean }) => {
@@ -34,8 +34,9 @@ const CTA = ({ heroInView }: { heroInView: boolean }) => {
           {/* Foreground */}
           <div className="relative z-10 flex flex-col items-center gap-5 w-full">
             <p className="text-center text-[24px] sm:text-[36px] xl:text-[56px] leading-tight tracking-tight">
-              “Whatever you do, work at it with all your heart.”
-              <span className="font-semibold underline"> Colossians 3:23</span>
+              “You say one thing, but we know what you REALLY mean.”
+              <br />
+              <span className="text-center text-[40px] font-semibold"> Ready to give your home interior a glow-up?</span>
             </p>
 
             <p className="text-center font-bold text-[25px] sm:text-[18px] xl:text-[27px]">
@@ -44,18 +45,18 @@ const CTA = ({ heroInView }: { heroInView: boolean }) => {
 
             <div className="flex flex-col-reverse items-center justify-center gap-1 md:flex-row md:gap-16">
               {/* Email */}
-              <div className="flex items-center gap-4 xl:gap-5">
+              {/* <div className="flex items-center gap-4 xl:gap-5">
                 <Mail fill="white" stroke="#00008B" className="size-6 sm:size-8" />
                 <p className="text-[13px] sm:text-[20px] xl:text-[25px] font-semibold">
                   {CONTACT_INFO[0].value}
                 </p>
-              </div>
+              </div> */}
 
               {/* Phone */}
               <div className="flex items-center gap-4 xl:gap-5">
                 <PhoneCall fill="white" stroke="none" className="size-5 sm:size-7" />
                 <p className="text-[13px] sm:text-[20px] xl:text-[25px]">
-                  {CONTACT_INFO[2].value}
+                  {CONTACT_INFO[1].value}
                 </p>
               </div>
             </div>

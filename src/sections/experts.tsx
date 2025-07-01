@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { Text } from "@/components/ui";
 // Import EXPERT_IMAGES for the static grid
-import { EXPERT_IMAGES } from "@/lib/constants";
+// import { EXPERT_IMAGES } from "@/lib/constants";
 // Commented out imports that will be used later with the carousel
 /*
 import { useState, useCallback, useEffect } from "react";
@@ -45,33 +45,42 @@ const Experts = () => {
                   variant="h2"
                   className="max-w-[517px] text-center xl:text-left"
                 >
-                  See Our Junk Removal
-                  <span className="text-blue-600"> Experts </span>
-                  At Work!
+                  How to Begin a
+                  <span className="text-blue-600"> Home Project </span>
+                  in 4 easy steps!
                 </Text>
               </div>
               <p className="hidden max-w-[478px] text-center font-[family-name:var(--font-sora-sans)] text-[19px] leading-[30px] sm:block xl:text-left">
-                What&apos;s stopping your dreams from becoming a reality. Good News
-                Haulers will get your area looking right.
+                What&apos;s stopping your dreams from becoming a reality.
               </p>
             </div>
 
             {/* Only showing the first image */}
             <div className="mt-16">
-              <div className="flex flex-col items-center">
-                <div className="relative aspect-video w-full max-w-[768px] overflow-hidden rounded-lg">
-                  <Image
-                    src={
-                      EXPERT_IMAGES[0].img_group[0]?.img_url ||
-                      "/images/image.png"
-                    }
-                    alt={EXPERT_IMAGES[0].img_group[0]?.img_name || ""}
-                    fill
-                    className="object-cover object-center"
-                  />
-                </div>
+              <div className="mx-auto flex w-full max-w-7xl flex-wrap justify-center gap-6 px-4">
+                {[
+                  "/images/step1.jpg",
+                  "/images/step2.jpg",
+                  "/images/step3.jpg",
+                  "/images/step4.jpg"
+                ].map((src, idx) => (
+                  <div
+                    key={idx}
+                    className="relative w-full sm:w-[30%] md:w-[45%] lg:w-[23%] overflow-hidden rounded-xl border border-white/10 bg-black"
+                  >
+                    <Image
+                      src={src}
+                      alt={`Project ${idx + 1}`}
+                      width={800}
+                      height={600}
+                      className="h-auto w-full rounded-xl object-contain"
+                      priority
+                    />
+                  </div>
+                ))}
               </div>
             </div>
+
 
             {/* Commented out additional images */}
             {/*

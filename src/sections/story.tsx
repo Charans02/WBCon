@@ -2,7 +2,8 @@
 import Image from "next/image";
 import { MessageCircle, Phone } from "lucide-react";
 import { Text } from "@/components/ui";
-import { JUNK_REMOVAL_IMAGES } from "@/lib/constants";
+import { CUSTOMERS } from "@/lib/constants";
+// import { JUNK_REMOVAL_IMAGES } from "@/lib/constants";
 // declare function gtag_report_conversion(url?: string): boolean;
 
 const Story = () => {
@@ -15,7 +16,7 @@ const Story = () => {
         <span className="text-blue-800">What</span> We Do!
       </Text>
       <Text className="mt-8 hidden max-w-[702px] text-center text-[#525252]">
-        For 1+ years Good News Haulers has been dedicated to keeping Texas a
+        For 5+ years Wayman Bros Construction has been dedicated to keeping Salt lake City a
         cleaner place for both you and those around you
       </Text>
       <div className="mt-8 xl:mt-15 flex w-full max-w-[768px] flex-col items-center gap-8 md:gap-20 xl:max-w-full xl:flex-row xl:gap-30">
@@ -39,9 +40,9 @@ const Story = () => {
             <br />
             <br />
             <span>
-              Good News Haulers is your go-to team for junk removal in Arlington, Mansfield, Grand Prairie, and beyond.
+              Wayman Bros Construction is your go-to team for junk removal in Arlington, Mansfield, Grand Prairie, and beyond.
             </span>
-            <div className="mx-auto flex flex-row items-center justify-center gap-2 py-5">
+            {/* <div className="mx-auto flex flex-row items-center justify-center gap-2 py-5">
               {JUNK_REMOVAL_IMAGES.map((item) => (
                 <Image
                   key={item.id}
@@ -52,6 +53,37 @@ const Story = () => {
                   className="w-[90px] h-[90px] sm:w-[120px] sm:h-[120px]"
                 />
               ))}
+            </div> */}
+            <div className="relative w-full flex justify-center mt-6">
+              <div
+                className="flex flex-wrap items-center justify-center w-full max-w-[700px] px-4 py-3"
+                style={{
+                  background: "linear-gradient(to right, transparent, #000, transparent)"
+                }}
+              >
+                <div className="flex items-center gap-1 sm:gap-3 md:gap-2 lg:gap-3 flex-shrink-0">
+                  {CUSTOMERS.map((customer, index) => (
+                    <Image
+                      key={customer.id}
+                      src={customer.avatar_url}
+                      alt={customer.name}
+                      width={40}
+                      height={40}
+                      className={`relative ${
+                        index > 0 ? "ml-[-20px] sm:ml-0" : ""
+                      } rounded-full border-2 border-white`}
+                    />
+                  ))}
+                </div>
+                <div className="flex items-center gap-2 flex-shrink-0 text-white pl-4">
+                  <Text className="text-[18px] font-semibold md:text-[22px] xl:text-[28px]">
+                    60+
+                  </Text>
+                  <Text className="text-[13px] font-extrabold md:text-[15px] whitespace-nowrap">
+                    Happy Customers
+                  </Text>
+                </div>
+              </div>
             </div>
             <span>
               Whether it&apos;s a single item or a full property cleanout—we haul it all with care, speed, and a smile.

@@ -17,7 +17,7 @@ const States = () => {
       <section className="flex flex-col items-center gap-8 px-[80px] py-[60px] xl:flex-row xl:gap-40">
         <div className="relative aspect-[6/7] w-full overflow-hidden rounded-2xl xl:max-w-full order-2">
           <Image
-            src="/images/truck.jpg"
+            src="/images/picture4.jpg"
             alt=""
             fill
             className="object-cover object-center"
@@ -28,13 +28,11 @@ const States = () => {
             variant="h2"
             className="max-w-[467px] text-center md:max-w-full xl:text-left"
           >
-            Your Junk Removal Solution,
-            <span className="text-blue-700"> Good News Haulers!</span>
+            Your Best ReModel Companion,
+            <span className="text-blue-700"> Wayman Bros Construction!</span>
           </Text>
           <Text className="mt-6 max-w-[516px] text-center text-[#525252] md:max-w-full xl:text-left">
-            Whether you are looking for a small junk removal job or a whole
-            house clean-out, Good News Haulers can get it done. We are open 24/7 always
-            taking call and new customers.
+            We offer comprehensive home remodeling services in the Salt Lake City area. Regardless of your design preferences, you can count on us to create a space you'll love living in for years to come.
           </Text>
           {/* Insert Button Below */}
           {/* <a

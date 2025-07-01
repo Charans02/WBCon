@@ -57,7 +57,7 @@ const Contact = () => {
           <Text variant="h2" className="text-center xl:text-left">
             Want to Hire The Best In {isMediumScreen && <br />} Texas
             <br />
-            <span className="text-red hidden"> Call Good News Haulers</span>
+            <span className="text-red hidden"> Call Wayman Bros Construction</span>
           </Text>
           {/* <Image
             src="/images/map.png"
@@ -72,7 +72,7 @@ const Contact = () => {
         </div>
         <div className="flex w-full flex-1 flex-col items-center gap-4 rounded-2xl bg-white p-8 shadow">
           <p className="text-blue-800 mb-8 text-center font-[family-name:var(--font-sora-sans)] text-[40px] leading-[40px] font-semibold xl:text-left">
-            Reach out to Good News Haulers!
+            Reach out to Wayman Bros Construction!
           </p>
           <form
             className="w-full"
