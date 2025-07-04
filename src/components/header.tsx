@@ -96,7 +96,7 @@ const Header = () => {
               className="flex items-center gap-1 rounded-full bg-blue-600 px-1 py-0.5 text-sm font-[family-name:var(--font-sora-sans)] text-white shadow-md transition hover:bg-blue-700"
               aria-label="Reserve Your Dumpster"
             > */}
-            <button
+            {/* <button
               onClick={() => {
                 const quoteSection = document.getElementById("quote");
                 const headerOffset = 160; // Adjust this if your header height is different
@@ -115,7 +115,7 @@ const Header = () => {
             >
               <Phone size={18} />
               <span className="font-bold">Contact Us</span>
-            </button>
+            </button> */}
 
             <button
               className="hover:text-blue-500 cursor-pointer transition-colors"

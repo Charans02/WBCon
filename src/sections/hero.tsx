@@ -55,7 +55,7 @@ const Hero = ({ setHeroInView }: { setHeroInView?: (inView: boolean) => void }) 
                 Salt Lake City&apos;s Top-Rated Construction Team
               </span>
               <br />
-              Locally Owned and Faith-Driven.
+              {/* Locally Owned and Faith-Driven. */}
             </Text>
 
             <Text className="text-center text-[16px] leading-[23px] md:text-left lg:text-[21px] lg:leading-[26px] xl:text-left">
@@ -63,27 +63,6 @@ const Hero = ({ setHeroInView }: { setHeroInView?: (inView: boolean) => void }) 
                 Serving Salt Lake City With Reliability.
               </span>
             </Text>
-
-            <div className="bg-[#f6f6f6] py-4 px-4 w-full rounded-xl md:px-6 md:max-w-[450px] mt-2">
-              <div className="mx-auto flex flex-col items-center justify-center gap-2 text-center md:flex-row md:gap-4 md:text-left">
-                <Image
-                  src="/images/google-review.png"
-                  alt="Google Review Badge"
-                  width={60}
-                  height={60}
-                  className="object-contain"
-                />
-                <div>
-                  <p className="text-lg font-semibold text-gray-800">
-                    Google Rating <span className="text-yellow-500">5.0</span>
-                    <span className="ml-2 text-yellow-400">★ ★ ★ ★ ★</span>
-                  </p>
-                  <p className="text-sm font-medium text-gray-600">
-                    Over <span className="font-bold text-black">60 Reviews</span>
-                  </p>
-                </div>
-              </div>
-            </div>
 
             <div className="hidden md:flex mt-4 items-center justify-start gap-1.5 py-2 whitespace-nowrap">
               <div className="flex items-center gap-1.5">

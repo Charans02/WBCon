@@ -8,7 +8,7 @@ import { SERVICE_AREAS } from "@/lib/constants";
 const ServiceAreas = () => {
   return (
     <section>
-      <div className="flex flex-col items-center justify-between bg-[url('/images/world_map.png')] bg-cover bg-center xl:flex-row">
+      <div className="flex flex-col items-center justify-center bg-[url('/images/world_map.png')] bg-cover bg-center xl:flex-row">
         <div className="flex flex-col items-center xl:items-start order-1 xl:order-2">
           <div className="bg-blue-500/10 w-fit rounded-full px-8 py-4">
             <p className="text-blue-800 font-[family-name:var(--font-lato-sans)] text-[18px] leading-[18px] font-semibold uppercase">
@@ -67,13 +67,13 @@ const ServiceAreas = () => {
             </p>
           </button>
         </div>
-        <Image
+        {/* <Image
           src="/images/truck_no_bg.png"
           alt=""
           width={553}
           height={737}
           className="scale-x-[1] h-fit order-2 xl:order-1"
-        />
+        /> */}
       </div>
     </section>
   );

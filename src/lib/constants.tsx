@@ -126,10 +126,10 @@ export const TESTIMONIALS: TestimonialType[] = [
 ];
 
 export const SERVICE_AREAS = [
-  "Salt Lake City",
-  "Mansfield",
-  "Grand Prairie",
-  "And Surrounding Areas in ",
+  "Utah",
+  "Utah",
+  "Utah",
+  "Utah",
 ];
 
 export const EXPERT_IMAGES: Expert[] = [
