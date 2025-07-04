@@ -4,7 +4,7 @@ import Banner from "@/components/banner";
 import {
   Hero,
   States,
-  Comparison,
+  // Comparison,
   Services,
   Testimonials,
   Story,
