@@ -1,43 +1,18 @@
 "use client";
+
 import Image from "next/image";
 import { Text } from "@/components/ui";
-// Import EXPERT_IMAGES for the static grid
-// import { EXPERT_IMAGES } from "@/lib/constants";
-// Commented out imports that will be used later with the carousel
-/*
-import { useState, useCallback, useEffect } from "react";
-import useEmblaCarousel from "embla-carousel-react";
-*/
 
 const Experts = () => {
-  // Commented carousel functionality - will be used later
-  /*
-  const [emblaRef, embla] = useEmblaCarousel({ loop: true });
-  const [selectedIndex, setSelectedIndex] = useState(0);
-
-  const scrollPrev = useCallback(() => embla && embla.scrollPrev(), [embla]);
-  const scrollNext = useCallback(() => embla && embla.scrollNext(), [embla]);
-
-  const onSelect = useCallback(() => {
-    if (!embla) return;
-    setSelectedIndex(embla.selectedScrollSnap());
-  }, [embla]);
-
-  useEffect(() => {
-    if (!embla) return;
-    embla.on("select", onSelect);
-    return () => {
-      embla.off("select", onSelect);
-    };
-  }, [embla, onSelect]);
-  */
-
   return (
     <div className="relative">
-      <div className="absolute inset-0 bg-[url('/images/bg.png')] bg-cover bg-center blur-[2px]"></div>
+      {/* Background */}
+      <div className="absolute inset-0 bg-[url('/images/bg.png')] bg-cover bg-center blur-[2px]" />
+
       <div className="text-background relative z-10">
         <div className="bg-black/60">
-          <section className="px-[80px] py-[60px]">
+          <section className="px-4 md:px-[80px] py-[60px]">
+            {/* Top Section */}
             <div className="flex flex-col items-center justify-between gap-9 xl:flex-row">
               <div className="flex flex-col items-center gap-9 xl:flex-row">
                 <Image src="/images/logo.png" alt="" width={134} height={122} />
@@ -55,222 +30,78 @@ const Experts = () => {
               </p>
             </div>
 
-            {/* Only showing the first image */}
-            <div className="mt-16">
-              <div className="mx-auto flex w-full max-w-7xl flex-wrap justify-center gap-6 px-4">
-                {[
-                  "/images/step1.jpg",
-                  "/images/step2.jpg",
-                  "/images/step3.jpg",
-                  "/images/step4.jpg"
-                ].map((src, idx) => (
-                  <div
-                    key={idx}
-                    className="relative w-full sm:w-[30%] md:w-[45%] lg:w-[23%] overflow-hidden rounded-xl border border-white/10 bg-black"
-                  >
-                    <Image
-                      src={src}
-                      alt={`Project ${idx + 1}`}
-                      width={800}
-                      height={600}
-                      className="h-auto w-full rounded-xl object-contain"
-                      priority
-                    />
-                  </div>
-                ))}
-              </div>
-            </div>
+            {/* Steps Section */}
+            <div className="relative mt-20">
+              {/* Desktop / Tablet Layout */}
+              <div className="hidden md:block relative">
+                {/* Horizontal line */}
+                <div className="absolute left-0 right-0 top-4 h-[4px] bg-blue-600 z-0" />
 
-
-            {/* Commented out additional images */}
-            {/*
-            <div className="mt-16 space-y-8">
-              <div className="flex flex-col items-center gap-8 xl:flex-row">
-                <div className="relative aspect-video w-full max-w-[768px] overflow-hidden rounded-lg">
-                  <Image
-                    src={
-                      EXPERT_IMAGES[0].img_group[0]?.img_url ||
-                      "/images/image.png"
-                    }
-                    alt={EXPERT_IMAGES[0].img_group[0]?.img_name || ""}
-                    fill
-                    className="object-cover object-center"
-                  />
-                </div>
-                <div className="relative hidden aspect-video w-full max-w-[768px] overflow-hidden rounded-lg xl:block">
-                  <Image
-                    src={
-                      EXPERT_IMAGES[0].img_group[1]?.img_url ||
-                      "/images/image.png"
-                    }
-                    alt={EXPERT_IMAGES[0].img_group[1]?.img_name || ""}
-                    fill
-                    className="object-cover object-center"
-                  />
-                </div>
-              </div>
-
-              <div className="hidden flex-col items-center gap-8 xl:flex xl:flex-row">
-                <div className="relative aspect-video w-full max-w-[768px] overflow-hidden rounded-lg">
-                  <Image
-                    src={
-                      EXPERT_IMAGES[0].img_group[2]?.img_url ||
-                      "/images/image.png"
-                    }
-                    alt={EXPERT_IMAGES[0].img_group[2]?.img_name || ""}
-                    fill
-                    className="object-cover object-center"
-                  />
-                </div>
-                <div className="relative aspect-video w-full max-w-[768px] overflow-hidden rounded-lg">
-                  <Image
-                    src={
-                      EXPERT_IMAGES[0].img_group[3]?.img_url ||
-                      "/images/image.png"
-                    }
-                    alt={EXPERT_IMAGES[0].img_group[3]?.img_name || ""}
-                    fill
-                    className="object-cover object-center"
-                  />
-                </div>
-                <div className="relative aspect-video w-full max-w-[768px] overflow-hidden rounded-lg">
-                  <Image
-                    src={
-                      EXPERT_IMAGES[0].img_group[4]?.img_url ||
-                      "/images/image.png"
-                    }
-                    alt={EXPERT_IMAGES[0].img_group[4]?.img_name || ""}
-                    fill
-                    className="object-cover object-center"
-                  />
-                </div>
-              </div>
-            </div>
-            */}
-
-            {/* Commented carousel implementation - will be used later */}
-            {/*
-            <div className="relative mt-16">
-              <div className="overflow-hidden" ref={emblaRef}>
-                <div className="flex">
-                  {EXPERT_IMAGES.map((group) => (
+                <div className="relative z-10 flex justify-between gap-4 flex-nowrap">
+                  {[
+                    "/images/step1.jpg",
+                    "/images/step2.jpg",
+                    "/images/step3.jpg",
+                    "/images/step4.jpg",
+                  ].map((src, idx) => (
                     <div
-                      key={group.id}
-                      className="min-w-full flex-none space-y-8"
+                      key={idx}
+                      className="relative flex flex-col items-center w-[250px] sm:w-[250px] md:w-[250px] lg:w-[330px]"
                     >
-                      <div className="flex flex-col items-center gap-8 xl:flex-row">
-                        <div className="relative aspect-video w-full max-w-[768px] overflow-hidden rounded-lg">
-                          <Image
-                            src={
-                              group.img_group[0]?.img_url || "/images/image.png"
-                            }
-                            alt={group.img_group[0]?.img_name || ""}
-                            fill
-                            className="object-cover object-center"
-                          />
-                        </div>
-                        <div className="relative aspect-video w-full max-w-[768px] overflow-hidden rounded-lg">
-                          <Image
-                            src={
-                              group.img_group[1]?.img_url || "/images/image.png"
-                            }
-                            alt={group.img_group[1]?.img_name || ""}
-                            fill
-                            className="object-cover object-center"
-                          />
-                        </div>
-                      </div>
-
-                      <div className="flex flex-col items-center gap-8 xl:flex-row">
-                        <div className="relative aspect-video w-full max-w-[768px] overflow-hidden rounded-lg">
-                          <Image
-                            src={
-                              group.img_group[2]?.img_url || "/images/image.png"
-                            }
-                            alt={group.img_group[2]?.img_name || ""}
-                            fill
-                            className="object-cover object-center"
-                          />
-                        </div>
-                        <div className="relative aspect-video w-full max-w-[768px] overflow-hidden rounded-lg">
-                          <Image
-                            src={
-                              group.img_group[3]?.img_url || "/images/image.png"
-                            }
-                            alt={group.img_group[3]?.img_name || ""}
-                            fill
-                            className="object-cover object-center"
-                          />
-                        </div>
-                        <div className="relative aspect-video w-full max-w-[768px] overflow-hidden rounded-lg">
-                          <Image
-                            src={
-                              group.img_group[4]?.img_url || "/images/image.png"
-                            }
-                            alt={group.img_group[4]?.img_name || ""}
-                            fill
-                            className="object-cover object-center"
-                          />
-                        </div>
+                      {/* Dot */}
+                      <div className="w-3 h-3 rounded-full bg-blue-600 mb-1 z-10" />
+                      {/* Connecting line */}
+                      <div className="h-6 w-[2px] bg-blue-600 mb-2" />
+                      {/* Image */}
+                      <div className="relative w-full aspect-square overflow-hidden rounded-xl border border-white/10 bg-black shadow-lg">
+                        <Image
+                          src={src}
+                          alt={`Project ${idx + 1}`}
+                          fill
+                          className="object-cover object-center"
+                          priority
+                        />
                       </div>
                     </div>
                   ))}
                 </div>
               </div>
 
-              <div className="mt-4 flex items-center justify-center gap-2">
-                <button
-                  onClick={scrollPrev}
-                  className="rounded-full bg-white/20 p-2 text-white"
-                  aria-label="Previous slide"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  >
-                    <path d="M15 18l-6-6 6-6" />
-                  </svg>
-                </button>
-                {EXPERT_IMAGES.map((_, index) => (
-                  <button
-                    key={index}
-                    className={`h-2 w-2 rounded-full transition-all ${
-                      selectedIndex === index ? "bg-red w-6" : "bg-white/70"
-                    }`}
-                    onClick={() => embla?.scrollTo(index)}
-                    aria-label={`Go to slide ${index + 1}`}
-                  />
-                ))}
+              {/* Mobile Layout */}
+              <div className="block md:hidden relative flex justify-center">
+                {/* Vertical line */}
+                <div className="absolute top-0 bottom-0 left-1/2 transform -translate-x-1/2 w-[4px] bg-blue-600 z-0" />
 
-                <button
-                  onClick={scrollNext}
-                  className="rounded-full bg-white/20 p-2 text-white"
-                  aria-label="Next slide"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  >
-                    <path d="M9 18l6-6-6-6" />
-                  </svg>
-                </button>
+                <div className="flex flex-col items-center gap-10 z-10">
+                  {[
+                    "/images/step1.jpg",
+                    "/images/step2.jpg",
+                    "/images/step3.jpg",
+                    "/images/step4.jpg",
+                  ].map((src, idx) => (
+                    <div
+                      key={idx}
+                      className="relative flex flex-col items-center w-full px-4"
+                    >
+                      {/* Dot */}
+                      <div className="w-3 h-3 rounded-full bg-blue-600 mb-2 z-10" />
+
+                      {/* Image */}
+                      <div className="relative w-full max-w-[260px] mx-auto overflow-hidden rounded-xl border border-white/10 bg-black shadow-lg">
+                        <Image
+                          src={src}
+                          alt={`Project ${idx + 1}`}
+                          width={800}
+                          height={800}
+                          className="object-cover object-center w-full h-auto"
+                          priority
+                        />
+                      </div>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
-            */}
           </section>
         </div>
       </div>

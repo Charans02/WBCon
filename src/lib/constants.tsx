@@ -126,7 +126,7 @@ export const TESTIMONIALS: TestimonialType[] = [
 ];
 
 export const SERVICE_AREAS = [
-  "Arlington",
+  "Salt Lake City",
   "Mansfield",
   "Grand Prairie",
   "And Surrounding Areas in ",

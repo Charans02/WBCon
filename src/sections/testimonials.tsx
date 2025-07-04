@@ -119,6 +119,10 @@ const Testimonials = () => {
   return (
     <div className="relative max-h-[700px] overflow-hidden">
       <div className="bg-opacity-95 absolute inset-0 bg-black bg-[url(/images/review_bg.png)] bg-cover bg-center blur-[2px]"></div>
+      {/* Desktop badge */}
+      <div className="hidden lg:block absolute top-24 right-34 z-20">
+        <GoogleReviewBadge />
+      </div>
       <div className="relative z-10 text-white">
         <section
           id="testimonials"
@@ -209,6 +213,30 @@ const Testimonials = () => {
 };
 
 export default Testimonials;
+
+// Reusable Google badge
+const GoogleReviewBadge = () => (
+  <div className="bg-[#f6f6f6] py-4 px-4 rounded-xl w-full max-w-[450px]">
+    <div className="flex items-center gap-3">
+      <Image
+        src="/images/google-review.png"
+        alt="Google Review Badge"
+        width={90}
+        height={90}
+        className="object-contain"
+      />
+      <div>
+        <p className="text-base font-semibold text-gray-800">
+          Google Rating <span className="text-yellow-500">5.0</span>
+          <span className="ml-2 text-yellow-400">★ ★ ★ ★ ★</span>
+        </p>
+        <p className="text-sm font-medium text-gray-600">
+          Over <span className="font-bold text-black">60 Reviews</span>
+        </p>
+      </div>
+    </div>
+  </div>
+);
 
 const TestimonialCard = React.forwardRef<
   HTMLDivElement,

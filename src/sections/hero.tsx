@@ -2,7 +2,10 @@
 import Image from "next/image";
 import { CalendarRange, Truck, MessageCircle, Phone } from "lucide-react";
 import { Text } from "@/components/ui";
+import { CUSTOMERS } from "@/lib/constants";
 import { useRef, useEffect } from "react";
+import { SERVICE_AREAS } from "@/lib/constants";
+import { MapPinCheckInside } from "lucide-react";
 
 const Hero = ({ setHeroInView }: { setHeroInView?: (inView: boolean) => void }) => {
   const heroRef = useRef<HTMLDivElement | null>(null);
@@ -95,6 +98,50 @@ const Hero = ({ setHeroInView }: { setHeroInView?: (inView: boolean) => void }) 
                 <Text className="text-[15px] font-semibold lg:text-[18px]">
                   60+ 5 star reviews
                 </Text>
+              </div>
+            </div>
+
+            {/* Happy Customers */}
+            <div className="customers-container flex w-full items-center justify-center md:justify-between gap-3 rounded-full border-none py-2 px-2 sm:w-fit sm:justify-around">
+              <div className="flex items-center gap-0 sm:gap-3 md:gap-1 lg:gap-3">
+                {CUSTOMERS.map((customer, index) => (
+                  <Image
+                    key={customer.id}
+                    src={customer.avatar_url}
+                    alt={customer.name}
+                    width={40}
+                    height={40}
+                    className={`relative ${index > 0 ? "ml-[-20px] sm:ml-0" : ""} rounded-full border-2 border-white`}
+                  />
+                ))}
+              </div>
+              <div className="flex items-center justify-between gap-2">
+                <Text className="text-[18px] font-semibold md:text-[22px] xl:text-[28px]">
+                  60+
+                </Text>
+                <Text className="text-[13px] font-extrabold md:text-[15px]">
+                  Happy Customers
+                </Text>
+              </div>
+            </div>
+
+            {/* Areas We Serve */}
+            <div className="mt-6 w-full">
+              <p className="text-[15px] md:text-[17px] lg:text-[18px] font-semibold text-white uppercase italic text-center md:text-left mb-4">
+                Same Day Services Available
+              </p>
+              <div className="mt-8 grid grid-cols-1 gap-5 md:grid-cols-2">
+                {SERVICE_AREAS.map((area, idx) => (
+                  <div key={idx} className="flex items-center gap-2.5">
+                    <MapPinCheckInside size={28} stroke="white" fill="blue" />
+                    <Text
+                      variant="body2"
+                      className="text-foreground font-bold max-w-full text-white text-[16px] md:text-[20px] md:max-w-[360px] xl:max-w-[212px]"
+                    >
+                      {area}, FL
+                    </Text>
+                  </div>
+                ))}
               </div>
             </div>
 
