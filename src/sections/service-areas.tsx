@@ -1,4 +1,4 @@
-import Image from "next/image";
+// import Image from "next/image";
 import { MapPinCheckInside } from "lucide-react";
 
 import { Text } from "@/components/ui";
