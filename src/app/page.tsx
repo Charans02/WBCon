@@ -10,12 +10,12 @@ import {
   Story,
   WhyChoose,
   Experts,
-  // ServiceAreas,
+  ServiceAreas,
   // Contact,
   CTA,
   JunkRemovalQuote,
 } from "@/sections";
-import FallMustHaves from "@/sections/FallMustHaves";
+// import FallMustHaves from "@/sections/FallMustHaves";
 import ConvertShowcase from "@/sections/ConvertShowcase"
 
 export default function Home() {
@@ -39,9 +39,9 @@ export default function Home() {
       <Banner />
       <WhyChoose />
       <Experts />
-      <FallMustHaves />
-      <Comparison />
-      {/* <ServiceAreas /> */}
+      {/* <FallMustHaves /> */}
+      {/* <Comparison /> */}
+      <ServiceAreas />
       {/* <Contact /> */}
       <CTA heroInView={heroInView} />
     </>
